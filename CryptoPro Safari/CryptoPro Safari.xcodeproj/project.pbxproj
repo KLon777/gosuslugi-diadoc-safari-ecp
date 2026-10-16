@@ -7,89 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F37AA2B30824E310035CE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37AA2A30824E310035CE15 /* AppDelegate.swift */; };
-		8F37AA2F30824E310035CE15 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA2D30824E310035CE15 /* Main.html */; };
-		8F37AA3130824E310035CE15 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA3030824E310035CE15 /* Icon.png */; };
-		8F37AA3330824E310035CE15 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA3230824E310035CE15 /* Style.css */; };
-		8F37AA3530824E310035CE15 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA3430824E310035CE15 /* Script.js */; };
-		8F37AA3730824E310035CE15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37AA3630824E310035CE15 /* ViewController.swift */; };
-		8F37AA3A30824E310035CE15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA3830824E310035CE15 /* Main.storyboard */; };
-		8F37AA3C30824E310035CE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA3B30824E310035CE15 /* Assets.xcassets */; };
-		8F37AA4330824E310035CE15 /* CryptoPro Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F37AA4230824E310035CE15 /* CryptoPro Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8F37AA4830824E310035CE15 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37AA4730824E310035CE15 /* SafariWebExtensionHandler.swift */; };
-		8F37AA6130824E310035CE15 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5430824E310035CE15 /* popup.js */; };
-		8F37AA6230824E310035CE15 /* trusted_sites.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5530824E310035CE15 /* trusted_sites.html */; };
-		8F37AA6330824E310035CE15 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5630824E310035CE15 /* background.js */; };
-		8F37AA6430824E310035CE15 /* trusted_sites.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5730824E310035CE15 /* trusted_sites.js */; };
-		8F37AA6530824E310035CE15 /* cades_safari_hook.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5830824E310035CE15 /* cades_safari_hook.js */; };
-		8F37AA6630824E310035CE15 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5930824E310035CE15 /* icons */; };
-		8F37AA6730824E310035CE15 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5A30824E310035CE15 /* manifest.json */; };
-		8F37AA6830824E310035CE15 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5B30824E310035CE15 /* popup.css */; };
-		8F37AA6930824E310035CE15 /* nmcades_plugin_api.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5C30824E310035CE15 /* nmcades_plugin_api.js */; };
-		8F37AA6A30824E310035CE15 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5D30824E310035CE15 /* content.js */; };
-		8F37AA6B30824E310035CE15 /* popup_default.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5E30824E310035CE15 /* popup_default.html */; };
-		8F37AA6C30824E310035CE15 /* popup_error.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA5F30824E310035CE15 /* popup_error.html */; };
-		8F37AA6D30824E310035CE15 /* popup_ok.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F37AA6030824E310035CE15 /* popup_ok.html */; };
+		8FD720893082703C00C05612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD720883082703C00C05612 /* AppDelegate.swift */; };
+		8FD7208D3082703C00C05612 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7208B3082703C00C05612 /* Main.html */; };
+		8FD7208F3082703C00C05612 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7208E3082703C00C05612 /* Icon.png */; };
+		8FD720913082703C00C05612 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720903082703C00C05612 /* Style.css */; };
+		8FD720933082703C00C05612 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720923082703C00C05612 /* Script.js */; };
+		8FD720953082703C00C05612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD720943082703C00C05612 /* ViewController.swift */; };
+		8FD720983082703C00C05612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720963082703C00C05612 /* Main.storyboard */; };
+		8FD7209A3082703C00C05612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720993082703C00C05612 /* Assets.xcassets */; };
+		8FD720A13082703C00C05612 /* CryptoPro Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8FD720A03082703C00C05612 /* CryptoPro Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FD720A63082703C00C05612 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD720A53082703C00C05612 /* SafariWebExtensionHandler.swift */; };
+		8FD720BF3082703D00C05612 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B23082703D00C05612 /* popup.js */; };
+		8FD720C03082703D00C05612 /* trusted_sites.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B33082703D00C05612 /* trusted_sites.html */; };
+		8FD720C13082703D00C05612 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B43082703D00C05612 /* background.js */; };
+		8FD720C23082703D00C05612 /* trusted_sites.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B53082703D00C05612 /* trusted_sites.js */; };
+		8FD720C33082703D00C05612 /* cades_safari_hook.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B63082703D00C05612 /* cades_safari_hook.js */; };
+		8FD720C43082703D00C05612 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B73082703D00C05612 /* icons */; };
+		8FD720C53082703D00C05612 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B83082703D00C05612 /* manifest.json */; };
+		8FD720C63082703D00C05612 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720B93082703D00C05612 /* popup.css */; };
+		8FD720C73082703D00C05612 /* nmcades_plugin_api.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720BA3082703D00C05612 /* nmcades_plugin_api.js */; };
+		8FD720C83082703D00C05612 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720BB3082703D00C05612 /* content.js */; };
+		8FD720C93082703D00C05612 /* popup_default.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720BC3082703D00C05612 /* popup_default.html */; };
+		8FD720CA3082703D00C05612 /* popup_error.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720BD3082703D00C05612 /* popup_error.html */; };
+		8FD720CB3082703D00C05612 /* popup_ok.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FD720BE3082703D00C05612 /* popup_ok.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F37AA4430824E310035CE15 /* PBXContainerItemProxy */ = {
+		8FD720A23082703C00C05612 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8F37AA1F30824E310035CE15 /* Project object */;
+			containerPortal = 8FD7207D3082703C00C05612 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F37AA4130824E310035CE15;
+			remoteGlobalIDString = 8FD7209F3082703C00C05612;
 			remoteInfo = "CryptoPro Safari Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8F37AA4F30824E310035CE15 /* Embed Foundation Extensions */ = {
+		8FD720AD3082703C00C05612 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "";
 			dstSubfolder = PlugIns;
 			files = (
-				8F37AA4330824E310035CE15 /* CryptoPro Safari Extension.appex in Embed Foundation Extensions */,
+				8FD720A13082703C00C05612 /* CryptoPro Safari Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8F37AA2730824E310035CE15 /* CryptoPro Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPro Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F37AA2A30824E310035CE15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F37AA2E30824E310035CE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
-		8F37AA3030824E310035CE15 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		8F37AA3230824E310035CE15 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		8F37AA3430824E310035CE15 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		8F37AA3630824E310035CE15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F37AA3930824E310035CE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F37AA3B30824E310035CE15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F37AA3D30824E310035CE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F37AA4230824E310035CE15 /* CryptoPro Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CryptoPro Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F37AA4730824E310035CE15 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		8F37AA4930824E310035CE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F37AA5430824E310035CE15 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
-		8F37AA5530824E310035CE15 /* trusted_sites.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = trusted_sites.html; path = Resources/trusted_sites.html; sourceTree = "<group>"; };
-		8F37AA5630824E310035CE15 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
-		8F37AA5730824E310035CE15 /* trusted_sites.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = trusted_sites.js; path = Resources/trusted_sites.js; sourceTree = "<group>"; };
-		8F37AA5830824E310035CE15 /* cades_safari_hook.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = cades_safari_hook.js; path = Resources/cades_safari_hook.js; sourceTree = "<group>"; };
-		8F37AA5930824E310035CE15 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
-		8F37AA5A30824E310035CE15 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
-		8F37AA5B30824E310035CE15 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
-		8F37AA5C30824E310035CE15 /* nmcades_plugin_api.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = nmcades_plugin_api.js; path = Resources/nmcades_plugin_api.js; sourceTree = "<group>"; };
-		8F37AA5D30824E310035CE15 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
-		8F37AA5E30824E310035CE15 /* popup_default.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_default.html; path = Resources/popup_default.html; sourceTree = "<group>"; };
-		8F37AA5F30824E310035CE15 /* popup_error.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_error.html; path = Resources/popup_error.html; sourceTree = "<group>"; };
-		8F37AA6030824E310035CE15 /* popup_ok.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_ok.html; path = Resources/popup_ok.html; sourceTree = "<group>"; };
+		8FD720853082703C00C05612 /* CryptoPro Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPro Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD720883082703C00C05612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FD7208C3082703C00C05612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		8FD7208E3082703C00C05612 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8FD720903082703C00C05612 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8FD720923082703C00C05612 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8FD720943082703C00C05612 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FD720973082703C00C05612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FD720993082703C00C05612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FD7209B3082703C00C05612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD720A03082703C00C05612 /* CryptoPro Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CryptoPro Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD720A53082703C00C05612 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8FD720A73082703C00C05612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD720B23082703D00C05612 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		8FD720B33082703D00C05612 /* trusted_sites.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = trusted_sites.html; path = Resources/trusted_sites.html; sourceTree = "<group>"; };
+		8FD720B43082703D00C05612 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		8FD720B53082703D00C05612 /* trusted_sites.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = trusted_sites.js; path = Resources/trusted_sites.js; sourceTree = "<group>"; };
+		8FD720B63082703D00C05612 /* cades_safari_hook.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = cades_safari_hook.js; path = Resources/cades_safari_hook.js; sourceTree = "<group>"; };
+		8FD720B73082703D00C05612 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		8FD720B83082703D00C05612 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		8FD720B93082703D00C05612 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+		8FD720BA3082703D00C05612 /* nmcades_plugin_api.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = nmcades_plugin_api.js; path = Resources/nmcades_plugin_api.js; sourceTree = "<group>"; };
+		8FD720BB3082703D00C05612 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		8FD720BC3082703D00C05612 /* popup_default.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_default.html; path = Resources/popup_default.html; sourceTree = "<group>"; };
+		8FD720BD3082703D00C05612 /* popup_error.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_error.html; path = Resources/popup_error.html; sourceTree = "<group>"; };
+		8FD720BE3082703D00C05612 /* popup_ok.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup_ok.html; path = Resources/popup_ok.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8F37AA2430824E310035CE15 /* Frameworks */ = {
+		8FD720823082703C00C05612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
 		};
-		8F37AA3F30824E310035CE15 /* Frameworks */ = {
+		8FD7209D3082703C00C05612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -97,74 +97,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F37AA1E30824E310035CE15 = {
+		8FD7207C3082703C00C05612 = {
 			isa = PBXGroup;
 			children = (
-				8F37AA2930824E310035CE15 /* CryptoPro Safari */,
-				8F37AA4630824E310035CE15 /* CryptoPro Safari Extension */,
-				8F37AA2830824E310035CE15 /* Products */,
+				8FD720873082703C00C05612 /* CryptoPro Safari */,
+				8FD720A43082703C00C05612 /* CryptoPro Safari Extension */,
+				8FD720863082703C00C05612 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8F37AA2830824E310035CE15 /* Products */ = {
+		8FD720863082703C00C05612 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F37AA2730824E310035CE15 /* CryptoPro Safari.app */,
-				8F37AA4230824E310035CE15 /* CryptoPro Safari Extension.appex */,
+				8FD720853082703C00C05612 /* CryptoPro Safari.app */,
+				8FD720A03082703C00C05612 /* CryptoPro Safari Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F37AA2930824E310035CE15 /* CryptoPro Safari */ = {
+		8FD720873082703C00C05612 /* CryptoPro Safari */ = {
 			isa = PBXGroup;
 			children = (
-				8F37AA2A30824E310035CE15 /* AppDelegate.swift */,
-				8F37AA3630824E310035CE15 /* ViewController.swift */,
-				8F37AA3830824E310035CE15 /* Main.storyboard */,
-				8F37AA3B30824E310035CE15 /* Assets.xcassets */,
-				8F37AA3D30824E310035CE15 /* Info.plist */,
-				8F37AA2C30824E310035CE15 /* Resources */,
+				8FD720883082703C00C05612 /* AppDelegate.swift */,
+				8FD720943082703C00C05612 /* ViewController.swift */,
+				8FD720963082703C00C05612 /* Main.storyboard */,
+				8FD720993082703C00C05612 /* Assets.xcassets */,
+				8FD7209B3082703C00C05612 /* Info.plist */,
+				8FD7208A3082703C00C05612 /* Resources */,
 			);
 			path = "CryptoPro Safari";
 			sourceTree = "<group>";
 		};
-		8F37AA2C30824E310035CE15 /* Resources */ = {
+		8FD7208A3082703C00C05612 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8F37AA2D30824E310035CE15 /* Main.html */,
-				8F37AA3030824E310035CE15 /* Icon.png */,
-				8F37AA3230824E310035CE15 /* Style.css */,
-				8F37AA3430824E310035CE15 /* Script.js */,
+				8FD7208B3082703C00C05612 /* Main.html */,
+				8FD7208E3082703C00C05612 /* Icon.png */,
+				8FD720903082703C00C05612 /* Style.css */,
+				8FD720923082703C00C05612 /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8F37AA4630824E310035CE15 /* CryptoPro Safari Extension */ = {
+		8FD720A43082703C00C05612 /* CryptoPro Safari Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8F37AA5330824E310035CE15 /* Resources */,
-				8F37AA4730824E310035CE15 /* SafariWebExtensionHandler.swift */,
-				8F37AA4930824E310035CE15 /* Info.plist */,
+				8FD720B13082703D00C05612 /* Resources */,
+				8FD720A53082703C00C05612 /* SafariWebExtensionHandler.swift */,
+				8FD720A73082703C00C05612 /* Info.plist */,
 			);
 			path = "CryptoPro Safari Extension";
 			sourceTree = "<group>";
 		};
-		8F37AA5330824E310035CE15 /* Resources */ = {
+		8FD720B13082703D00C05612 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8F37AA5430824E310035CE15 /* popup.js */,
-				8F37AA5530824E310035CE15 /* trusted_sites.html */,
-				8F37AA5630824E310035CE15 /* background.js */,
-				8F37AA5730824E310035CE15 /* trusted_sites.js */,
-				8F37AA5830824E310035CE15 /* cades_safari_hook.js */,
-				8F37AA5930824E310035CE15 /* icons */,
-				8F37AA5A30824E310035CE15 /* manifest.json */,
-				8F37AA5B30824E310035CE15 /* popup.css */,
-				8F37AA5C30824E310035CE15 /* nmcades_plugin_api.js */,
-				8F37AA5D30824E310035CE15 /* content.js */,
-				8F37AA5E30824E310035CE15 /* popup_default.html */,
-				8F37AA5F30824E310035CE15 /* popup_error.html */,
-				8F37AA6030824E310035CE15 /* popup_ok.html */,
+				8FD720B23082703D00C05612 /* popup.js */,
+				8FD720B33082703D00C05612 /* trusted_sites.html */,
+				8FD720B43082703D00C05612 /* background.js */,
+				8FD720B53082703D00C05612 /* trusted_sites.js */,
+				8FD720B63082703D00C05612 /* cades_safari_hook.js */,
+				8FD720B73082703D00C05612 /* icons */,
+				8FD720B83082703D00C05612 /* manifest.json */,
+				8FD720B93082703D00C05612 /* popup.css */,
+				8FD720BA3082703D00C05612 /* nmcades_plugin_api.js */,
+				8FD720BB3082703D00C05612 /* content.js */,
+				8FD720BC3082703D00C05612 /* popup_default.html */,
+				8FD720BD3082703D00C05612 /* popup_error.html */,
+				8FD720BE3082703D00C05612 /* popup_ok.html */,
 			);
 			name = Resources;
 			path = "CryptoPro Safari Extension";
@@ -173,147 +173,147 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F37AA2630824E310035CE15 /* CryptoPro Safari */ = {
+		8FD720843082703C00C05612 /* CryptoPro Safari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F37AA5030824E310035CE15 /* Build configuration list for PBXNativeTarget "CryptoPro Safari" */;
+			buildConfigurationList = 8FD720AE3082703C00C05612 /* Build configuration list for PBXNativeTarget "CryptoPro Safari" */;
 			buildPhases = (
-				8F37AA2330824E310035CE15 /* Sources */,
-				8F37AA2430824E310035CE15 /* Frameworks */,
-				8F37AA2530824E310035CE15 /* Resources */,
-				8F37AA4F30824E310035CE15 /* Embed Foundation Extensions */,
+				8FD720813082703C00C05612 /* Sources */,
+				8FD720823082703C00C05612 /* Frameworks */,
+				8FD720833082703C00C05612 /* Resources */,
+				8FD720AD3082703C00C05612 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F37AA4530824E310035CE15 /* PBXTargetDependency */,
+				8FD720A33082703C00C05612 /* PBXTargetDependency */,
 			);
 			name = "CryptoPro Safari";
 			productName = "CryptoPro Safari";
-			productReference = 8F37AA2730824E310035CE15 /* CryptoPro Safari.app */;
+			productReference = 8FD720853082703C00C05612 /* CryptoPro Safari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F37AA4130824E310035CE15 /* CryptoPro Safari Extension */ = {
+		8FD7209F3082703C00C05612 /* CryptoPro Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F37AA4C30824E310035CE15 /* Build configuration list for PBXNativeTarget "CryptoPro Safari Extension" */;
+			buildConfigurationList = 8FD720AA3082703C00C05612 /* Build configuration list for PBXNativeTarget "CryptoPro Safari Extension" */;
 			buildPhases = (
-				8F37AA3E30824E310035CE15 /* Sources */,
-				8F37AA3F30824E310035CE15 /* Frameworks */,
-				8F37AA4030824E310035CE15 /* Resources */,
+				8FD7209C3082703C00C05612 /* Sources */,
+				8FD7209D3082703C00C05612 /* Frameworks */,
+				8FD7209E3082703C00C05612 /* Resources */,
 			);
 			buildRules = (
 			);
 			name = "CryptoPro Safari Extension";
 			productName = "CryptoPro Safari Extension";
-			productReference = 8F37AA4230824E310035CE15 /* CryptoPro Safari Extension.appex */;
+			productReference = 8FD720A03082703C00C05612 /* CryptoPro Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8F37AA1F30824E310035CE15 /* Project object */ = {
+		8FD7207D3082703C00C05612 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					8F37AA2630824E310035CE15 = {
+					8FD720843082703C00C05612 = {
 						CreatedOnToolsVersion = 27.0;
 					};
-					8F37AA4130824E310035CE15 = {
+					8FD7209F3082703C00C05612 = {
 						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
-			buildConfigurationList = 8F37AA2230824E310035CE15 /* Build configuration list for PBXProject "CryptoPro Safari" */;
+			buildConfigurationList = 8FD720803082703C00C05612 /* Build configuration list for PBXProject "CryptoPro Safari" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8F37AA1E30824E310035CE15;
+			mainGroup = 8FD7207C3082703C00C05612;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8F37AA2830824E310035CE15 /* Products */;
+			productRefGroup = 8FD720863082703C00C05612 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F37AA2630824E310035CE15 /* CryptoPro Safari */,
-				8F37AA4130824E310035CE15 /* CryptoPro Safari Extension */,
+				8FD720843082703C00C05612 /* CryptoPro Safari */,
+				8FD7209F3082703C00C05612 /* CryptoPro Safari Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8F37AA2530824E310035CE15 /* Resources */ = {
+		8FD720833082703C00C05612 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				8F37AA3130824E310035CE15 /* Icon.png in Resources */,
-				8F37AA3A30824E310035CE15 /* Main.storyboard in Resources */,
-				8F37AA3530824E310035CE15 /* Script.js in Resources */,
-				8F37AA2F30824E310035CE15 /* Main.html in Resources */,
-				8F37AA3C30824E310035CE15 /* Assets.xcassets in Resources */,
-				8F37AA3330824E310035CE15 /* Style.css in Resources */,
+				8FD7208F3082703C00C05612 /* Icon.png in Resources */,
+				8FD720983082703C00C05612 /* Main.storyboard in Resources */,
+				8FD720933082703C00C05612 /* Script.js in Resources */,
+				8FD7208D3082703C00C05612 /* Main.html in Resources */,
+				8FD7209A3082703C00C05612 /* Assets.xcassets in Resources */,
+				8FD720913082703C00C05612 /* Style.css in Resources */,
 			);
 		};
-		8F37AA4030824E310035CE15 /* Resources */ = {
+		8FD7209E3082703C00C05612 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				8F37AA6C30824E310035CE15 /* popup_error.html in Resources */,
-				8F37AA6130824E310035CE15 /* popup.js in Resources */,
-				8F37AA6730824E310035CE15 /* manifest.json in Resources */,
-				8F37AA6430824E310035CE15 /* trusted_sites.js in Resources */,
-				8F37AA6D30824E310035CE15 /* popup_ok.html in Resources */,
-				8F37AA6330824E310035CE15 /* background.js in Resources */,
-				8F37AA6A30824E310035CE15 /* content.js in Resources */,
-				8F37AA6930824E310035CE15 /* nmcades_plugin_api.js in Resources */,
-				8F37AA6830824E310035CE15 /* popup.css in Resources */,
-				8F37AA6630824E310035CE15 /* icons in Resources */,
-				8F37AA6530824E310035CE15 /* cades_safari_hook.js in Resources */,
-				8F37AA6230824E310035CE15 /* trusted_sites.html in Resources */,
-				8F37AA6B30824E310035CE15 /* popup_default.html in Resources */,
+				8FD720CA3082703D00C05612 /* popup_error.html in Resources */,
+				8FD720BF3082703D00C05612 /* popup.js in Resources */,
+				8FD720C53082703D00C05612 /* manifest.json in Resources */,
+				8FD720C23082703D00C05612 /* trusted_sites.js in Resources */,
+				8FD720CB3082703D00C05612 /* popup_ok.html in Resources */,
+				8FD720C13082703D00C05612 /* background.js in Resources */,
+				8FD720C83082703D00C05612 /* content.js in Resources */,
+				8FD720C73082703D00C05612 /* nmcades_plugin_api.js in Resources */,
+				8FD720C63082703D00C05612 /* popup.css in Resources */,
+				8FD720C43082703D00C05612 /* icons in Resources */,
+				8FD720C33082703D00C05612 /* cades_safari_hook.js in Resources */,
+				8FD720C03082703D00C05612 /* trusted_sites.html in Resources */,
+				8FD720C93082703D00C05612 /* popup_default.html in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F37AA2330824E310035CE15 /* Sources */ = {
+		8FD720813082703C00C05612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				8F37AA3730824E310035CE15 /* ViewController.swift in Sources */,
-				8F37AA2B30824E310035CE15 /* AppDelegate.swift in Sources */,
+				8FD720953082703C00C05612 /* ViewController.swift in Sources */,
+				8FD720893082703C00C05612 /* AppDelegate.swift in Sources */,
 			);
 		};
-		8F37AA3E30824E310035CE15 /* Sources */ = {
+		8FD7209C3082703C00C05612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				8F37AA4830824E310035CE15 /* SafariWebExtensionHandler.swift in Sources */,
+				8FD720A63082703C00C05612 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F37AA4530824E310035CE15 /* PBXTargetDependency */ = {
+		8FD720A33082703C00C05612 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F37AA4130824E310035CE15 /* CryptoPro Safari Extension */;
-			targetProxy = 8F37AA4430824E310035CE15 /* PBXContainerItemProxy */;
+			target = 8FD7209F3082703C00C05612 /* CryptoPro Safari Extension */;
+			targetProxy = 8FD720A23082703C00C05612 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F37AA2D30824E310035CE15 /* Main.html */ = {
+		8FD7208B3082703C00C05612 /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8F37AA2E30824E310035CE15 /* Base */,
+				8FD7208C3082703C00C05612 /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		8F37AA3830824E310035CE15 /* Main.storyboard */ = {
+		8FD720963082703C00C05612 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8F37AA3930824E310035CE15 /* Base */,
+				8FD720973082703C00C05612 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8F37AA4A30824E310035CE15 /* Debug configuration for PBXProject "CryptoPro Safari" */ = {
+		8FD720A83082703C00C05612 /* Debug configuration for PBXProject "CryptoPro Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				NMA_BUNDLE_PREFIX = local.safaricrypto;
@@ -385,7 +385,7 @@
 			};
 			name = Debug;
 		};
-		8F37AA4B30824E310035CE15 /* Release configuration for PBXProject "CryptoPro Safari" */ = {
+		8FD720A93082703C00C05612 /* Release configuration for PBXProject "CryptoPro Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				NMA_BUNDLE_PREFIX = local.safaricrypto;
@@ -441,7 +441,7 @@
 			};
 			name = Release;
 		};
-		8F37AA4D30824E310035CE15 /* Debug configuration for PBXNativeTarget "CryptoPro Safari Extension" */ = {
+		8FD720AB3082703C00C05612 /* Debug configuration for PBXNativeTarget "CryptoPro Safari Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -476,7 +476,7 @@
 			};
 			name = Debug;
 		};
-		8F37AA4E30824E310035CE15 /* Release configuration for PBXNativeTarget "CryptoPro Safari Extension" */ = {
+		8FD720AC3082703C00C05612 /* Release configuration for PBXNativeTarget "CryptoPro Safari Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -511,7 +511,7 @@
 			};
 			name = Release;
 		};
-		8F37AA5130824E310035CE15 /* Debug configuration for PBXNativeTarget "CryptoPro Safari" */ = {
+		8FD720AF3082703C00C05612 /* Debug configuration for PBXNativeTarget "CryptoPro Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -552,7 +552,7 @@
 			};
 			name = Debug;
 		};
-		8F37AA5230824E310035CE15 /* Release configuration for PBXNativeTarget "CryptoPro Safari" */ = {
+		8FD720B03082703C00C05612 /* Release configuration for PBXNativeTarget "CryptoPro Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -596,32 +596,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F37AA2230824E310035CE15 /* Build configuration list for PBXProject "CryptoPro Safari" */ = {
+		8FD720803082703C00C05612 /* Build configuration list for PBXProject "CryptoPro Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F37AA4A30824E310035CE15 /* Debug configuration for PBXProject "CryptoPro Safari" */,
-				8F37AA4B30824E310035CE15 /* Release configuration for PBXProject "CryptoPro Safari" */,
+				8FD720A83082703C00C05612 /* Debug configuration for PBXProject "CryptoPro Safari" */,
+				8FD720A93082703C00C05612 /* Release configuration for PBXProject "CryptoPro Safari" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		8F37AA4C30824E310035CE15 /* Build configuration list for PBXNativeTarget "CryptoPro Safari Extension" */ = {
+		8FD720AA3082703C00C05612 /* Build configuration list for PBXNativeTarget "CryptoPro Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F37AA4D30824E310035CE15 /* Debug configuration for PBXNativeTarget "CryptoPro Safari Extension" */,
-				8F37AA4E30824E310035CE15 /* Release configuration for PBXNativeTarget "CryptoPro Safari Extension" */,
+				8FD720AB3082703C00C05612 /* Debug configuration for PBXNativeTarget "CryptoPro Safari Extension" */,
+				8FD720AC3082703C00C05612 /* Release configuration for PBXNativeTarget "CryptoPro Safari Extension" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		8F37AA5030824E310035CE15 /* Build configuration list for PBXNativeTarget "CryptoPro Safari" */ = {
+		8FD720AE3082703C00C05612 /* Build configuration list for PBXNativeTarget "CryptoPro Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F37AA5130824E310035CE15 /* Debug configuration for PBXNativeTarget "CryptoPro Safari" */,
-				8F37AA5230824E310035CE15 /* Release configuration for PBXNativeTarget "CryptoPro Safari" */,
+				8FD720AF3082703C00C05612 /* Debug configuration for PBXNativeTarget "CryptoPro Safari" */,
+				8FD720B03082703C00C05612 /* Release configuration for PBXNativeTarget "CryptoPro Safari" */,
 			);
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8F37AA1F30824E310035CE15 /* Project object */;
+	rootObject = 8FD7207D3082703C00C05612 /* Project object */;
 	validationLevel = 1;
 }

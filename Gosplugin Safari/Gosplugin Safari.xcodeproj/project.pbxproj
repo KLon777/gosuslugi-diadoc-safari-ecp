@@ -7,77 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FE9368730824F0F009B5BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9368630824F0F009B5BF1 /* AppDelegate.swift */; };
-		8FE9368B30824F0F009B5BF1 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9368930824F0F009B5BF1 /* Main.html */; };
-		8FE9368D30824F0F009B5BF1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9368C30824F0F009B5BF1 /* Icon.png */; };
-		8FE9368F30824F0F009B5BF1 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9368E30824F0F009B5BF1 /* Style.css */; };
-		8FE9369130824F0F009B5BF1 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9369030824F0F009B5BF1 /* Script.js */; };
-		8FE9369330824F0F009B5BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9369230824F0F009B5BF1 /* ViewController.swift */; };
-		8FE9369630824F0F009B5BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9369430824F0F009B5BF1 /* Main.storyboard */; };
-		8FE9369830824F10009B5BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9369730824F10009B5BF1 /* Assets.xcassets */; };
-		8FE9369F30824F10009B5BF1 /* Gosplugin Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8FE9369E30824F10009B5BF1 /* Gosplugin Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8FE936A430824F10009B5BF1 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE936A330824F10009B5BF1 /* SafariWebExtensionHandler.swift */; };
-		8FE936B730824F10009B5BF1 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B030824F10009B5BF1 /* popup */; };
-		8FE936B830824F10009B5BF1 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B130824F10009B5BF1 /* background.js */; };
-		8FE936B930824F10009B5BF1 /* includes in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B230824F10009B5BF1 /* includes */; };
-		8FE936BA30824F10009B5BF1 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B330824F10009B5BF1 /* img */; };
-		8FE936BB30824F10009B5BF1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B430824F10009B5BF1 /* manifest.json */; };
-		8FE936BC30824F10009B5BF1 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B530824F10009B5BF1 /* content.js */; };
-		8FE936BD30824F10009B5BF1 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8FE936B630824F10009B5BF1 /* fonts */; };
+		8F88A9653082651C006945A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88A9643082651C006945A2 /* AppDelegate.swift */; };
+		8F88A9693082651C006945A2 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9673082651C006945A2 /* Main.html */; };
+		8F88A96B3082651C006945A2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A96A3082651C006945A2 /* Icon.png */; };
+		8F88A96D3082651C006945A2 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A96C3082651C006945A2 /* Style.css */; };
+		8F88A96F3082651C006945A2 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A96E3082651C006945A2 /* Script.js */; };
+		8F88A9713082651C006945A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88A9703082651C006945A2 /* ViewController.swift */; };
+		8F88A9743082651C006945A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9723082651C006945A2 /* Main.storyboard */; };
+		8F88A9763082651C006945A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9753082651C006945A2 /* Assets.xcassets */; };
+		8F88A97D3082651C006945A2 /* Gosplugin Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F88A97C3082651C006945A2 /* Gosplugin Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F88A9823082651C006945A2 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88A9813082651C006945A2 /* SafariWebExtensionHandler.swift */; };
+		8F88A9953082651C006945A2 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A98E3082651C006945A2 /* popup */; };
+		8F88A9963082651C006945A2 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A98F3082651C006945A2 /* background.js */; };
+		8F88A9973082651C006945A2 /* includes in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9903082651C006945A2 /* includes */; };
+		8F88A9983082651C006945A2 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9913082651C006945A2 /* img */; };
+		8F88A9993082651C006945A2 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9923082651C006945A2 /* manifest.json */; };
+		8F88A99A3082651C006945A2 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9933082651C006945A2 /* content.js */; };
+		8F88A99B3082651C006945A2 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A9943082651C006945A2 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8FE936A030824F10009B5BF1 /* PBXContainerItemProxy */ = {
+		8F88A97E3082651C006945A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8FE9367B30824F0F009B5BF1 /* Project object */;
+			containerPortal = 8F88A9593082651C006945A2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8FE9369D30824F10009B5BF1;
+			remoteGlobalIDString = 8F88A97B3082651C006945A2;
 			remoteInfo = "Gosplugin Safari Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8FE936AB30824F10009B5BF1 /* Embed Foundation Extensions */ = {
+		8F88A9893082651C006945A2 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "";
 			dstSubfolder = PlugIns;
 			files = (
-				8FE9369F30824F10009B5BF1 /* Gosplugin Safari Extension.appex in Embed Foundation Extensions */,
+				8F88A97D3082651C006945A2 /* Gosplugin Safari Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8FE9368330824F0F009B5BF1 /* Gosplugin Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gosplugin Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FE9368630824F0F009B5BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FE9368A30824F0F009B5BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
-		8FE9368C30824F0F009B5BF1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		8FE9368E30824F0F009B5BF1 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		8FE9369030824F0F009B5BF1 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		8FE9369230824F0F009B5BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8FE9369530824F0F009B5BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8FE9369730824F10009B5BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8FE9369930824F10009B5BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FE9369E30824F10009B5BF1 /* Gosplugin Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gosplugin Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FE936A330824F10009B5BF1 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		8FE936A530824F10009B5BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FE936B030824F10009B5BF1 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
-		8FE936B130824F10009B5BF1 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
-		8FE936B230824F10009B5BF1 /* includes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = includes; path = Resources/includes; sourceTree = "<group>"; };
-		8FE936B330824F10009B5BF1 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = Resources/img; sourceTree = "<group>"; };
-		8FE936B430824F10009B5BF1 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
-		8FE936B530824F10009B5BF1 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
-		8FE936B630824F10009B5BF1 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = Resources/fonts; sourceTree = "<group>"; };
+		8F88A9613082651C006945A2 /* Gosplugin Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gosplugin Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F88A9643082651C006945A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F88A9683082651C006945A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		8F88A96A3082651C006945A2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8F88A96C3082651C006945A2 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8F88A96E3082651C006945A2 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8F88A9703082651C006945A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F88A9733082651C006945A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F88A9753082651C006945A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F88A9773082651C006945A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F88A97C3082651C006945A2 /* Gosplugin Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gosplugin Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F88A9813082651C006945A2 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8F88A9833082651C006945A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F88A98E3082651C006945A2 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
+		8F88A98F3082651C006945A2 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		8F88A9903082651C006945A2 /* includes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = includes; path = Resources/includes; sourceTree = "<group>"; };
+		8F88A9913082651C006945A2 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = Resources/img; sourceTree = "<group>"; };
+		8F88A9923082651C006945A2 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		8F88A9933082651C006945A2 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		8F88A9943082651C006945A2 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = Resources/fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8FE9368030824F0F009B5BF1 /* Frameworks */ = {
+		8F88A95E3082651C006945A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
 		};
-		8FE9369B30824F10009B5BF1 /* Frameworks */ = {
+		8F88A9793082651C006945A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -85,68 +85,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8FE9367A30824F0F009B5BF1 = {
+		8F88A9583082651C006945A2 = {
 			isa = PBXGroup;
 			children = (
-				8FE9368530824F0F009B5BF1 /* Gosplugin Safari */,
-				8FE936A230824F10009B5BF1 /* Gosplugin Safari Extension */,
-				8FE9368430824F0F009B5BF1 /* Products */,
+				8F88A9633082651C006945A2 /* Gosplugin Safari */,
+				8F88A9803082651C006945A2 /* Gosplugin Safari Extension */,
+				8F88A9623082651C006945A2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8FE9368430824F0F009B5BF1 /* Products */ = {
+		8F88A9623082651C006945A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FE9368330824F0F009B5BF1 /* Gosplugin Safari.app */,
-				8FE9369E30824F10009B5BF1 /* Gosplugin Safari Extension.appex */,
+				8F88A9613082651C006945A2 /* Gosplugin Safari.app */,
+				8F88A97C3082651C006945A2 /* Gosplugin Safari Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FE9368530824F0F009B5BF1 /* Gosplugin Safari */ = {
+		8F88A9633082651C006945A2 /* Gosplugin Safari */ = {
 			isa = PBXGroup;
 			children = (
-				8FE9368630824F0F009B5BF1 /* AppDelegate.swift */,
-				8FE9369230824F0F009B5BF1 /* ViewController.swift */,
-				8FE9369430824F0F009B5BF1 /* Main.storyboard */,
-				8FE9369730824F10009B5BF1 /* Assets.xcassets */,
-				8FE9369930824F10009B5BF1 /* Info.plist */,
-				8FE9368830824F0F009B5BF1 /* Resources */,
+				8F88A9643082651C006945A2 /* AppDelegate.swift */,
+				8F88A9703082651C006945A2 /* ViewController.swift */,
+				8F88A9723082651C006945A2 /* Main.storyboard */,
+				8F88A9753082651C006945A2 /* Assets.xcassets */,
+				8F88A9773082651C006945A2 /* Info.plist */,
+				8F88A9663082651C006945A2 /* Resources */,
 			);
 			path = "Gosplugin Safari";
 			sourceTree = "<group>";
 		};
-		8FE9368830824F0F009B5BF1 /* Resources */ = {
+		8F88A9663082651C006945A2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8FE9368930824F0F009B5BF1 /* Main.html */,
-				8FE9368C30824F0F009B5BF1 /* Icon.png */,
-				8FE9368E30824F0F009B5BF1 /* Style.css */,
-				8FE9369030824F0F009B5BF1 /* Script.js */,
+				8F88A9673082651C006945A2 /* Main.html */,
+				8F88A96A3082651C006945A2 /* Icon.png */,
+				8F88A96C3082651C006945A2 /* Style.css */,
+				8F88A96E3082651C006945A2 /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8FE936A230824F10009B5BF1 /* Gosplugin Safari Extension */ = {
+		8F88A9803082651C006945A2 /* Gosplugin Safari Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8FE936AF30824F10009B5BF1 /* Resources */,
-				8FE936A330824F10009B5BF1 /* SafariWebExtensionHandler.swift */,
-				8FE936A530824F10009B5BF1 /* Info.plist */,
+				8F88A98D3082651C006945A2 /* Resources */,
+				8F88A9813082651C006945A2 /* SafariWebExtensionHandler.swift */,
+				8F88A9833082651C006945A2 /* Info.plist */,
 			);
 			path = "Gosplugin Safari Extension";
 			sourceTree = "<group>";
 		};
-		8FE936AF30824F10009B5BF1 /* Resources */ = {
+		8F88A98D3082651C006945A2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8FE936B030824F10009B5BF1 /* popup */,
-				8FE936B130824F10009B5BF1 /* background.js */,
-				8FE936B230824F10009B5BF1 /* includes */,
-				8FE936B330824F10009B5BF1 /* img */,
-				8FE936B430824F10009B5BF1 /* manifest.json */,
-				8FE936B530824F10009B5BF1 /* content.js */,
-				8FE936B630824F10009B5BF1 /* fonts */,
+				8F88A98E3082651C006945A2 /* popup */,
+				8F88A98F3082651C006945A2 /* background.js */,
+				8F88A9903082651C006945A2 /* includes */,
+				8F88A9913082651C006945A2 /* img */,
+				8F88A9923082651C006945A2 /* manifest.json */,
+				8F88A9933082651C006945A2 /* content.js */,
+				8F88A9943082651C006945A2 /* fonts */,
 			);
 			name = Resources;
 			path = "Gosplugin Safari Extension";
@@ -155,141 +155,141 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FE9368230824F0F009B5BF1 /* Gosplugin Safari */ = {
+		8F88A9603082651C006945A2 /* Gosplugin Safari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FE936AC30824F10009B5BF1 /* Build configuration list for PBXNativeTarget "Gosplugin Safari" */;
+			buildConfigurationList = 8F88A98A3082651C006945A2 /* Build configuration list for PBXNativeTarget "Gosplugin Safari" */;
 			buildPhases = (
-				8FE9367F30824F0F009B5BF1 /* Sources */,
-				8FE9368030824F0F009B5BF1 /* Frameworks */,
-				8FE9368130824F0F009B5BF1 /* Resources */,
-				8FE936AB30824F10009B5BF1 /* Embed Foundation Extensions */,
+				8F88A95D3082651C006945A2 /* Sources */,
+				8F88A95E3082651C006945A2 /* Frameworks */,
+				8F88A95F3082651C006945A2 /* Resources */,
+				8F88A9893082651C006945A2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8FE936A130824F10009B5BF1 /* PBXTargetDependency */,
+				8F88A97F3082651C006945A2 /* PBXTargetDependency */,
 			);
 			name = "Gosplugin Safari";
 			productName = "Gosplugin Safari";
-			productReference = 8FE9368330824F0F009B5BF1 /* Gosplugin Safari.app */;
+			productReference = 8F88A9613082651C006945A2 /* Gosplugin Safari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8FE9369D30824F10009B5BF1 /* Gosplugin Safari Extension */ = {
+		8F88A97B3082651C006945A2 /* Gosplugin Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FE936A830824F10009B5BF1 /* Build configuration list for PBXNativeTarget "Gosplugin Safari Extension" */;
+			buildConfigurationList = 8F88A9863082651C006945A2 /* Build configuration list for PBXNativeTarget "Gosplugin Safari Extension" */;
 			buildPhases = (
-				8FE9369A30824F10009B5BF1 /* Sources */,
-				8FE9369B30824F10009B5BF1 /* Frameworks */,
-				8FE9369C30824F10009B5BF1 /* Resources */,
+				8F88A9783082651C006945A2 /* Sources */,
+				8F88A9793082651C006945A2 /* Frameworks */,
+				8F88A97A3082651C006945A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			name = "Gosplugin Safari Extension";
 			productName = "Gosplugin Safari Extension";
-			productReference = 8FE9369E30824F10009B5BF1 /* Gosplugin Safari Extension.appex */;
+			productReference = 8F88A97C3082651C006945A2 /* Gosplugin Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8FE9367B30824F0F009B5BF1 /* Project object */ = {
+		8F88A9593082651C006945A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					8FE9368230824F0F009B5BF1 = {
+					8F88A9603082651C006945A2 = {
 						CreatedOnToolsVersion = 27.0;
 					};
-					8FE9369D30824F10009B5BF1 = {
+					8F88A97B3082651C006945A2 = {
 						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
-			buildConfigurationList = 8FE9367E30824F0F009B5BF1 /* Build configuration list for PBXProject "Gosplugin Safari" */;
+			buildConfigurationList = 8F88A95C3082651C006945A2 /* Build configuration list for PBXProject "Gosplugin Safari" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8FE9367A30824F0F009B5BF1;
+			mainGroup = 8F88A9583082651C006945A2;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8FE9368430824F0F009B5BF1 /* Products */;
+			productRefGroup = 8F88A9623082651C006945A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FE9368230824F0F009B5BF1 /* Gosplugin Safari */,
-				8FE9369D30824F10009B5BF1 /* Gosplugin Safari Extension */,
+				8F88A9603082651C006945A2 /* Gosplugin Safari */,
+				8F88A97B3082651C006945A2 /* Gosplugin Safari Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8FE9368130824F0F009B5BF1 /* Resources */ = {
+		8F88A95F3082651C006945A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				8FE9368D30824F0F009B5BF1 /* Icon.png in Resources */,
-				8FE9369630824F0F009B5BF1 /* Main.storyboard in Resources */,
-				8FE9369130824F0F009B5BF1 /* Script.js in Resources */,
-				8FE9368B30824F0F009B5BF1 /* Main.html in Resources */,
-				8FE9369830824F10009B5BF1 /* Assets.xcassets in Resources */,
-				8FE9368F30824F0F009B5BF1 /* Style.css in Resources */,
+				8F88A96B3082651C006945A2 /* Icon.png in Resources */,
+				8F88A9743082651C006945A2 /* Main.storyboard in Resources */,
+				8F88A96F3082651C006945A2 /* Script.js in Resources */,
+				8F88A9693082651C006945A2 /* Main.html in Resources */,
+				8F88A9763082651C006945A2 /* Assets.xcassets in Resources */,
+				8F88A96D3082651C006945A2 /* Style.css in Resources */,
 			);
 		};
-		8FE9369C30824F10009B5BF1 /* Resources */ = {
+		8F88A97A3082651C006945A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				8FE936BC30824F10009B5BF1 /* content.js in Resources */,
-				8FE936BA30824F10009B5BF1 /* img in Resources */,
-				8FE936B830824F10009B5BF1 /* background.js in Resources */,
-				8FE936BD30824F10009B5BF1 /* fonts in Resources */,
-				8FE936BB30824F10009B5BF1 /* manifest.json in Resources */,
-				8FE936B930824F10009B5BF1 /* includes in Resources */,
-				8FE936B730824F10009B5BF1 /* popup in Resources */,
+				8F88A99A3082651C006945A2 /* content.js in Resources */,
+				8F88A9983082651C006945A2 /* img in Resources */,
+				8F88A9963082651C006945A2 /* background.js in Resources */,
+				8F88A99B3082651C006945A2 /* fonts in Resources */,
+				8F88A9993082651C006945A2 /* manifest.json in Resources */,
+				8F88A9973082651C006945A2 /* includes in Resources */,
+				8F88A9953082651C006945A2 /* popup in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8FE9367F30824F0F009B5BF1 /* Sources */ = {
+		8F88A95D3082651C006945A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				8FE9369330824F0F009B5BF1 /* ViewController.swift in Sources */,
-				8FE9368730824F0F009B5BF1 /* AppDelegate.swift in Sources */,
+				8F88A9713082651C006945A2 /* ViewController.swift in Sources */,
+				8F88A9653082651C006945A2 /* AppDelegate.swift in Sources */,
 			);
 		};
-		8FE9369A30824F10009B5BF1 /* Sources */ = {
+		8F88A9783082651C006945A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				8FE936A430824F10009B5BF1 /* SafariWebExtensionHandler.swift in Sources */,
+				8F88A9823082651C006945A2 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8FE936A130824F10009B5BF1 /* PBXTargetDependency */ = {
+		8F88A97F3082651C006945A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8FE9369D30824F10009B5BF1 /* Gosplugin Safari Extension */;
-			targetProxy = 8FE936A030824F10009B5BF1 /* PBXContainerItemProxy */;
+			target = 8F88A97B3082651C006945A2 /* Gosplugin Safari Extension */;
+			targetProxy = 8F88A97E3082651C006945A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8FE9368930824F0F009B5BF1 /* Main.html */ = {
+		8F88A9673082651C006945A2 /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8FE9368A30824F0F009B5BF1 /* Base */,
+				8F88A9683082651C006945A2 /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		8FE9369430824F0F009B5BF1 /* Main.storyboard */ = {
+		8F88A9723082651C006945A2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8FE9369530824F0F009B5BF1 /* Base */,
+				8F88A9733082651C006945A2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8FE936A630824F10009B5BF1 /* Debug configuration for PBXProject "Gosplugin Safari" */ = {
+		8F88A9843082651C006945A2 /* Debug configuration for PBXProject "Gosplugin Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				NMA_BUNDLE_PREFIX = local.safaricrypto;
@@ -361,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		8FE936A730824F10009B5BF1 /* Release configuration for PBXProject "Gosplugin Safari" */ = {
+		8F88A9853082651C006945A2 /* Release configuration for PBXProject "Gosplugin Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				NMA_BUNDLE_PREFIX = local.safaricrypto;
@@ -417,7 +417,7 @@
 			};
 			name = Release;
 		};
-		8FE936A930824F10009B5BF1 /* Debug configuration for PBXNativeTarget "Gosplugin Safari Extension" */ = {
+		8F88A9873082651C006945A2 /* Debug configuration for PBXNativeTarget "Gosplugin Safari Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -452,7 +452,7 @@
 			};
 			name = Debug;
 		};
-		8FE936AA30824F10009B5BF1 /* Release configuration for PBXNativeTarget "Gosplugin Safari Extension" */ = {
+		8F88A9883082651C006945A2 /* Release configuration for PBXNativeTarget "Gosplugin Safari Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -487,7 +487,7 @@
 			};
 			name = Release;
 		};
-		8FE936AD30824F10009B5BF1 /* Debug configuration for PBXNativeTarget "Gosplugin Safari" */ = {
+		8F88A98B3082651C006945A2 /* Debug configuration for PBXNativeTarget "Gosplugin Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -528,7 +528,7 @@
 			};
 			name = Debug;
 		};
-		8FE936AE30824F10009B5BF1 /* Release configuration for PBXNativeTarget "Gosplugin Safari" */ = {
+		8F88A98C3082651C006945A2 /* Release configuration for PBXNativeTarget "Gosplugin Safari" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -572,32 +572,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FE9367E30824F0F009B5BF1 /* Build configuration list for PBXProject "Gosplugin Safari" */ = {
+		8F88A95C3082651C006945A2 /* Build configuration list for PBXProject "Gosplugin Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FE936A630824F10009B5BF1 /* Debug configuration for PBXProject "Gosplugin Safari" */,
-				8FE936A730824F10009B5BF1 /* Release configuration for PBXProject "Gosplugin Safari" */,
+				8F88A9843082651C006945A2 /* Debug configuration for PBXProject "Gosplugin Safari" */,
+				8F88A9853082651C006945A2 /* Release configuration for PBXProject "Gosplugin Safari" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		8FE936A830824F10009B5BF1 /* Build configuration list for PBXNativeTarget "Gosplugin Safari Extension" */ = {
+		8F88A9863082651C006945A2 /* Build configuration list for PBXNativeTarget "Gosplugin Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FE936A930824F10009B5BF1 /* Debug configuration for PBXNativeTarget "Gosplugin Safari Extension" */,
-				8FE936AA30824F10009B5BF1 /* Release configuration for PBXNativeTarget "Gosplugin Safari Extension" */,
+				8F88A9873082651C006945A2 /* Debug configuration for PBXNativeTarget "Gosplugin Safari Extension" */,
+				8F88A9883082651C006945A2 /* Release configuration for PBXNativeTarget "Gosplugin Safari Extension" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		8FE936AC30824F10009B5BF1 /* Build configuration list for PBXNativeTarget "Gosplugin Safari" */ = {
+		8F88A98A3082651C006945A2 /* Build configuration list for PBXNativeTarget "Gosplugin Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FE936AD30824F10009B5BF1 /* Debug configuration for PBXNativeTarget "Gosplugin Safari" */,
-				8FE936AE30824F10009B5BF1 /* Release configuration for PBXNativeTarget "Gosplugin Safari" */,
+				8F88A98B3082651C006945A2 /* Debug configuration for PBXNativeTarget "Gosplugin Safari" */,
+				8F88A98C3082651C006945A2 /* Release configuration for PBXNativeTarget "Gosplugin Safari" */,
 			);
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8FE9367B30824F0F009B5BF1 /* Project object */;
+	rootObject = 8F88A9593082651C006945A2 /* Project object */;
 	validationLevel = 1;
 }

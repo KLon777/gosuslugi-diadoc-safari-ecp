@@ -60,7 +60,8 @@ def patch_gos(out, shim):
                      "return nmh; // Safari: только native messaging через мост", 1, "gos protocol")
     lines = s.split("\n")
     imports = [i for i, l in enumerate(lines) if l.strip().startswith("import ")]
-    lines.insert((max(imports) + 1) if imports else 0, shim)
+    # контент-скрипт Госплагина подтверждает получение ответа (sendResponse(null)) — см. nt_shim.js
+    lines.insert((max(imports) + 1) if imports else 0, "var __NMA_TAB_ACK = true;\n" + shim)
     open(p, "w", encoding="utf-8").write("\n".join(lines))
 
 

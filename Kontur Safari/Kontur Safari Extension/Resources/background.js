@@ -141,15 +141,28 @@ function __nativeSendOnce(name, msg, cb) {
 				});
 			});
 		}
+		// Иногда Safari теряет связь расширения с конкретной вкладкой: sendMessage не падает,
+		// но сообщение до страницы не доходит (лечилось только новой вкладкой). Если контент-скрипт
+		// умеет подтверждать получение (__NMA_TAB_ACK — Госплагин отвечает sendResponse(null)),
+		// ждём подтверждение и без него тоже рассылаем во все вкладки.
+		var ACK_WAIT = 1500;
 		chrome.tabs.sendMessage = function (tabId, msg) {
-			var p;
+			var p, acked = false, done = false;
+			function fallback(why) {
+				if (done) return; done = true;
+				__diag("tabs.sendMessage: " + why + " — шлю во все вкладки");
+				broadcast(tabId, msg);
+			}
 			try { p = orig.apply(null, arguments); }
-			catch (e) { __diag("tabs.sendMessage: " + e.message + " — шлю во все вкладки"); broadcast(tabId, msg); return Promise.resolve(); }
-			if (p && p.catch) {
-				return p.catch(function (e) {
-					__diag("tabs.sendMessage: " + (e && e.message) + " — шлю во все вкладки");
-					broadcast(tabId, msg);
-				});
+			catch (e) { fallback(e.message); return Promise.resolve(); }
+			if (typeof __NMA_TAB_ACK !== "undefined") {
+				setTimeout(function () { if (!acked) fallback("вкладка " + tabId + " не подтвердила получение"); }, ACK_WAIT);
+			}
+			if (p && p.then) {
+				return p.then(function (r) {
+					if (r !== undefined) acked = true;
+					return r;
+				}, function (e) { fallback(e && e.message); });
 			}
 			return p;
 		};
