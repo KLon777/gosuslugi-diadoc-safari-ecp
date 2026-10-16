@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Настройки ЭЦП Browser Plugin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/icons/favicon.png">
+    <script type="text/javascript" src="trusted_sites.js"></script>
+    <script type="text/javascript" src="nmcades_plugin_api.js"></script>
+    <script type="text/javascript" src="content.js"></script>
+    <style type="text/css">
+        object.hiddenObject {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border-style: none;
+            border-width: 0;
+            max-width: 0;
+            max-height: 0;
+        }
+
+        html {
+            height: 100%;
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: block;
+            box-sizing: border-box;
+            margin: 0;
+            height: 100%;
+            font: 13px/1.7em Arial, 'Liberation Sans', Arimo, Roboto, sans-serif;
+            color: #444444;
+            background-color: white;
+        }
+
+        *, *:before, *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        div.container {
+            max-width: 1000px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .container:before, .container:after {
+            display: table;
+            content: " ";
+        }
+
+        .container:after {
+            clear: both;
+        }
+
+        div.row {
+            margin-left: -15px;
+            margin-right: -15px;
+            box-sizing: border-box;
+        }
+
+        .row:before, .row:after {
+            display: table;
+            content: " ";
+        }
+
+        div.centralBlock {
+            width: 66.67%;
+            float: left;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        div.shift {
+            display: block !important;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            width: 16.67%;
+            float: left;
+        }
+
+        h1 {
+            margin-top: 1.54em;
+            color: #252525;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-left: 0;
+            margin-right: 0;
+            box-sizing: border-box;
+        }
+
+        div.alert {
+            box-sizing: border-box;
+            transition-delay: 0;
+            transition-duration: 0.15s;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0, 0, 1, 1);
+            background-color: #f03c280f;
+            border-bottom-color: #EED3D7;
+            border-left-color: #EED3D7;
+            border-right-color: #EED3D7;
+            border-top-color: #EED3D7;
+            color: #f03c28;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            opacity: 1;
+        }
+
+        div.success {
+            box-sizing: border-box;
+            transition-delay: 0;
+            transition-duration: 0.15s;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0, 0, 1, 1);
+            background-color: #ccfcda;
+            border-bottom-color: #99e1ae;
+            border-left-color: #99e1ae;
+            border-right-color: #99e1ae;
+            border-top-color: #99e1ae;
+            color: #126c3a;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            opacity: 1;
+        }
+
+        button, html input[type="button"] {
+            cursor: pointer;
+        }
+
+            button.close {
+                border-style: none;
+                border-color: currentColor;
+                border-width: 0;
+                margin: 0;
+                padding: 0;
+                float: right;
+                text-align: center;
+                text-indent: 0;
+                white-space: nowrap;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 1;
+                text-transform: none;
+                color: #000000;
+                opacity: 0.2;
+                text-shadow: 0 1px 0 #FFFFFF;
+                background-clip: border-box;
+                background-origin: padding-box;
+                background-size: auto;
+                cursor: pointer;
+                box-sizing: border-box;
+                display: inline-block;
+                background-color: transparent;
+            }
+
+        h2 {
+            color: #464646;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        ul.nodeslist {
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 10px;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        button.close.pull-left {
+            float: left !important;
+            margin-right: 5px;
+        }
+
+        .close:hover, .close:focus {
+            color: #000000;
+            cursor: pointer;
+            opacity: 0.5;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .close:focus {
+            opacity: 1;
+            color: #f03c28;
+        }
+
+        div.add-new {
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            float: left;
+            width: 33.33%;
+            box-sizing: border-box;
+        }
+
+        div.input-group {
+            border-collapse: separate;
+            display: table;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        input.form-control {
+            background-color: #FFFFFF;
+            border-bottom-color: #CCCCCC;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 0;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: #CCCCCC;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: #CCCCCC;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: #CCCCCC;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 0;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-collapse: separate;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.071);
+            color: #555555;
+            display: table-cell;
+            font-size: 14px;
+            height: 34px;
+            line-height: 1.43;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 6px;
+            transition-delay: 0, 0;
+            transition-duration: 0.15s, 0.15s;
+            transition-property: border-color, box-shadow;
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1), cubic-bezier(0.42, 0, 0.58, 1);
+            vertical-align: middle;
+            width: 100%;
+            margin-bottom: 0;
+            box-sizing: border-box;
+        }
+
+            input.form-control:focus {
+                border-color: #66afe9;
+                outline: 0;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+            }
+
+        span.input-group-btn {
+            position: relative;
+            white-space: nowrap;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 1%;
+            display: table-cell;
+        }
+
+        button.add {
+            display: inline-block;
+            font-style: normal;
+            font-weight: 400;
+            border-bottom-color: transparent;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 4px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: transparent;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: transparent;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 4px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: 700;
+            height: 34px;
+            line-height: 20px;
+            margin: 0px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 6px;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            background-color: #DDDDDD;
+        }
+
+            button.add:hover, button.add:focus {
+                color: #333333;
+                text-decoration: none;
+            }
+
+            button.add:focus {
+                border: thin solid #66afe9;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+            }
+
+        div.btn-group {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+
+        button.submit:hover, button.submit:focus, button.submit:active {
+            color: #fff;
+            background-color: #035e90;
+            border-color: #adadad;
+        }
+
+        button.submit {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.428571429;
+            text-align: center;
+            white-space: normal;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            position: relative;
+            float: left;
+            background-color: #fff;
+            border-color: #ccc;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+            height: 0;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="shift">
+            </div>
+            <div class="centralBlock" id="centralBlock">
+                <h1 id="centralBlockHeader">
+                    Настройки расширения для CAdES Browser Plugin
+                </h1>
+                <p>
+                    Список надежных узлов, которые не причинят вред вашему компьютеру и данным. Для
+                    заданных веб-узлов расширения CAdES Browser Plugin не будет требовать подтверждения
+                    пользователя при открытии хранилища сертификатов, создании подписи или расшифровании
+                    сообщения. При добавлении веб-узлов в надежные можно использовать символ "*" для
+                    указания всех субдоменов данного узла.
+                </p>
+                <div class="alert">
+                    <button id="btn_trust_note" type="button" class="close">×</button>
+                    <b>Важно!</b> При добавлении веб-узла в список надежных, вы должны быть уверены,
+                    что веб-скрипты, загруженные или запущенные с данного веб-узла, не могут нанести
+                    вред компьютеру или данным.
+                </div>
+                <h2>
+                    Список доверенных узлов
+                </h2>
+                <div class="alert" id="untrustedSitesDisabledMsg" style="display: none;">
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="container">
+                        <ul class="nodeslist" id="nodes_list"></ul>
+                        <div class="row">
+                            <div class="add-new">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Добавить новый" id="new_node_name" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="add" id="add_button">
+                                            +
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr id="sitesLine1" />
+                <h2 id="groupPolicySitesLabel">
+                    Список доверенных узлов групповой политики
+                </h2>
+                <hr id="groupPolicySitesLine1" />
+                <div class="row">
+                    <div class="container">
+                        <ul class="nodeslist" id="nodes_listGP"></ul>
+                    </div>
+                </div>
+                <hr id="groupPolicySitesLine2" />
+                <div class="btn-group">
+                    <button type="submit" name="save" id="btn_save" class="submit" value="1">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

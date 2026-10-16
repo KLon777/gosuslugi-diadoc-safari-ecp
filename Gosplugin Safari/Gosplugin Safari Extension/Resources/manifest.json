@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "name": "Госплагин",
+  "description": "Расширение для браузера «Госплагин»",
+  "version": "1.3.43.0",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "includes/lib/base64.js",
+        "includes/lib/crypto-js.js",
+        "includes/bootstrap.js",
+        "includes/formats.js",
+        "includes/_core/error_handler.js",
+        "includes/_core/hash_stream.js",
+        "content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Госплагин",
+    "default_popup": "popup/popup.htm",
+    "default_icon": {
+      "16": "img/logo/logo_16x16.png",
+      "32": "img/logo/logo_32x32.png",
+      "48": "img/logo/logo_48x48.png",
+      "64": "img/logo/logo_64x64.png",
+      "128": "img/logo/logo_128x128.png"
+    }
+  },
+  "icons": {
+    "16": "img/logo/logo_16x16.png",
+    "32": "img/logo/logo_32x32.png",
+    "48": "img/logo/logo_48x48.png",
+    "64": "img/logo/logo_64x64.png",
+    "128": "img/logo/logo_128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "includes/lib/base64.js",
+        "includes/lib/crypto-js.js",
+        "includes/bootstrap.js",
+        "includes/formats.js",
+        "includes/_core/error_handler.js",
+        "includes/system.js",
+        "includes/crypto.js",
+        "includes/_core/error_data.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "alarms",
+    "storage",
+    "nativeMessaging",
+    "notifications",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

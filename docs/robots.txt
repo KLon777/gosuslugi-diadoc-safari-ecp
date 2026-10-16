@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://klon777.github.io/gosuslugi-diadoc-safari-ecp/sitemap.xml

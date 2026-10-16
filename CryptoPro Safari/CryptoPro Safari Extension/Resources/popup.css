@@ -1,0 +1,134 @@
+body {
+    width: 280px;
+    /*background-color: #F9FAFB;*/
+    background: radial-gradient(
+            420px 260px at 100% 0%,
+            #EEF2F7 0%,
+            #F9FAFB 60%,
+            #F9FAFB 100%
+    );
+    font-family: Arial, 'Liberation Sans', Arimo, Roboto, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* --- Логотип --- */
+section.product {
+    margin: 15px 8px 0;
+    display: flex;
+    align-items: center;
+}
+.product img.logo {
+    display: block;
+    width: 80px;
+    height: 50px;
+    margin-top: 9px;
+}
+.product .vertical-line {
+    height: 50px;
+    border-left: 2px solid #000;
+}
+.product .name {
+    padding-left: 12px;
+    font-weight: 600;
+}
+.name-company {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+.name-product {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #575757;
+}
+
+/* --- Строка статуса состояния плагина --- */
+section.status {
+    margin: 16px 0 12px;
+    padding: 1px 0 2px;
+    font-size: 11px;
+    text-align: center;
+    border-top: 1px solid #E5E8EC;
+    border-bottom: 1px solid #E5E8EC;
+    background: #f2f2f2;
+    color: #6b7280;
+}
+.status.active {}
+.status.notactive {}
+.status.error {}
+
+/* --- Кнопки основных ссылок --- */
+section.links {
+    margin: 16px 12px;
+}
+.links .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+.link-btn {
+    justify-content: center;
+    padding: 12px 14px;
+    margin: 2px 4px;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0050a0;
+    background: #FFFFFF;
+    border: 1px solid #E5E8EC;
+    border-radius: 8px;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+    user-select: none;
+}
+.link-btn:hover {
+    background: #F3F7FC;
+    border-color: #C6D6EA;
+    color: #003366;
+}
+.links.inline {
+    display: flex;
+    justify-content: space-evenly;
+}
+.inline .link {
+    color: #6b7280;
+    font-weight: 600;
+    padding: 0 8px;
+}
+.inline .link:hover {
+    color: #0050a0;
+}
+.link svg {
+    margin-right: 4px;
+}
+
+/* --- Комментарии при ошибке --- */
+section.comments {
+    margin: 16px 12px;
+    text-align: center;
+}
+.comments div {
+    margin-top: 16px;
+}
+.comments .text-red {
+    color: #f03c28;
+}
+.comments .text-primary {
+    color: #0050a0;
+}
+.comments .text-gray {
+    color: #555555;
+}
+
+/* --- Версия расширения --- */
+footer {
+    border-top: 1px solid #E5E8EC;
+    background: #f2f2f2;
+    padding: 4px 8px;font-size:9px;
+    color:#6b7280;
+    text-align: right;
+}
+

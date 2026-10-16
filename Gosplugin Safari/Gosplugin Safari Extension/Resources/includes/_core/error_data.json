@@ -1,0 +1,1424 @@
+[
+    {
+        "category": "Application",
+        "codeName": "ContentEmpty",
+        "message": "Данные не найдены",
+        "code": 20006
+    },
+    {
+        "category": "Application",
+        "codeName": "NoError",
+        "message": "Успешное выполнение операции",
+        "code": 0
+    },
+    {
+        "category": "Application",
+        "codeName": "Generic",
+        "message": "Общая ошибка",
+        "code": 20001
+    },
+    {
+        "category": "Application",
+        "codeName": "Interrupted",
+        "message": "Сессия прервана",
+        "code": 20002
+    },
+    {
+        "category": "Application",
+        "codeName": "Cancelled",
+        "message": "Операция отменена пользователем",
+        "code": 20003
+    },
+    {
+        "category": "Application",
+        "codeName": "Unloaded",
+        "message": "Модуль не загружен",
+        "code": 20004
+    },
+    {
+        "category": "Application",
+        "codeName": "UnknownMethod",
+        "message": "Не найден метод",
+        "code": 20005
+    },
+    {
+        "category": "Application",
+        "codeName": "FileIdEmpty",
+        "message": "Не задан идентификатор файла",
+        "code": 20007
+    },
+    {
+        "category": "Application",
+        "codeName": "FileNameEmpty",
+        "message": "Не задано имя файла",
+        "code": 20008
+    },
+    {
+        "category": "Application",
+        "codeName": "FileNotFound",
+        "message": "Файл не найден",
+        "code": 20009
+    },
+    {
+        "category": "Application",
+        "codeName": "UnsupportedTransferEncoding",
+        "message": "Неподдерживаемый механизм конвертации",
+        "code": 20010
+    },
+    {
+        "category": "Application",
+        "codeName": "ResponceCorrupted",
+        "message": "Выходные данные повреждены",
+        "code": 20012
+    },
+    {
+        "category": "Application",
+        "codeName": "NotImplemented",
+        "message": "Отсутствует реализация",
+        "code": 20013
+    },
+    {
+        "category": "Application",
+        "codeName": "TsaConnectionError",
+        "message": "Ошибка подключения к TSA",
+        "code": 20014
+    },
+    {
+        "category": "Application",
+        "codeName": "TsaBadRequest",
+        "message": "Ошибка формата запроса",
+        "code": 20015
+    },
+    {
+        "category": "Application",
+        "codeName": "TsaTimestampRejected",
+        "message": "Отказ TSA в выдаче штампа времени",
+        "code": 20016
+    },
+    {
+        "category": "Application",
+        "codeName": "TsaTimestampVerificationError",
+        "message": "Ошибка при проверке штампа времени",
+        "code": 20017
+    },
+    {
+        "category": "Application",
+        "codeName": "TsaUnexpectedError",
+        "message": "Неизвестная ошибка при работе с сервером или штампом времени",
+        "code": 20018
+    },
+    {
+        "category": "Application",
+        "codeName": "DiskFullError",
+        "message": "Недостаточно свободного места на диске",
+        "code": 20019
+    },
+    {
+        "category": "Application",
+        "codeName": "CheckSumError",
+        "message": "Ошибка сравнения контрольных сумм",
+        "code": 20020
+    },
+    {
+        "category": "Application",
+        "codeName": "FileSizeOverflow",
+        "message": "Превышен максимальный размер файла",
+        "code": 20021
+    },
+    {
+        "category": "Application",
+        "codeName": "InvalidInputFormat",
+        "message": "Некорректный формат данных",
+        "code": 20022
+    },
+    {
+        "category": "Application",
+        "codeName": "OutputSizeOverflow",
+        "message": "Превышен максимальный размер ответа в 10 Мбайт",
+        "code": 20023
+    },
+    {
+        "category": "Application",
+        "codeName": "FileCreateError",
+        "message": "Ошибка при формировании файла",
+        "code": 20024
+    },
+    {
+        "category": "Application",
+        "codeName": "UnexpectedChunkError",
+        "message": "Порция передана вне последовательности",
+        "code": 20025
+    },
+    {
+        "category": "Application",
+        "codeName": "TransferChunkError",
+        "message": "Ошибка передачи порции",
+        "code": 20026
+    },
+    {
+        "category": "Crypto",
+        "codeName": "PrivateKeyNotFound",
+        "message": "Не найден закрытый ключ",
+        "code": 30001
+    },
+    {
+        "category": "Crypto",
+        "codeName": "PublicKeyNotFound",
+        "message": "Не найден открытый ключ",
+        "code": 30002
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateNotFound",
+        "message": "Не найден сертификат в системном хранилище",
+        "code": 30003
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ProviderNotFound",
+        "message": "Не найден криптопровайдер",
+        "code": 30004
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ContainerNotFound",
+        "message": "Не найден контейнер",
+        "code": 30005
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ContextNotFound",
+        "message": "Не найден контекст",
+        "code": 30006
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AlgParamNotFound",
+        "message": "Не найдены параметры алгоритма",
+        "code": 30007
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AlgorithmNotFound",
+        "message": "Не найден алгоритм",
+        "code": 30008
+    },
+    {
+        "category": "Crypto",
+        "codeName": "TypeNotFound",
+        "message": "Не найден тип",
+        "code": 30009
+    },
+    {
+        "category": "Crypto",
+        "codeName": "StoreNotFound",
+        "message": "Не найдено хранилище",
+        "code": 30010
+    },
+    {
+        "category": "Crypto",
+        "codeName": "DeviceNotFound",
+        "message": "Не найден внешний носитель",
+        "code": 30011
+    },
+    {
+        "category": "Crypto",
+        "codeName": "SignatureTypeNotFound",
+        "message": "Не найден тип подписи",
+        "code": 30012
+    },
+    {
+        "category": "Crypto",
+        "codeName": "StoreNameEmpty",
+        "message": "Не задано хранилище сертификатов",
+        "code": 30013
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateEmpty",
+        "message": "Сертификат не найден",
+        "code": 30014
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AlgorithmEmpty",
+        "message": "Не задан алгоритм",
+        "code": 30015
+    },
+    {
+        "category": "Crypto",
+        "codeName": "MechanismsEmpty",
+        "message": "Не найдены механизмы",
+        "code": 30016
+    },
+    {
+        "category": "Crypto",
+        "codeName": "TokensLoginFailed",
+        "message": "Ошибка авторизации на токене",
+        "code": 30017
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateInStore",
+        "message": "Сертификат уже содержится в хранилище",
+        "code": 30018
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateOutStore",
+        "message": "Сертификат отсутствует в хранилище",
+        "code": 30019
+    },
+    {
+        "category": "Crypto",
+        "codeName": "MechanismNotSupported",
+        "message": "Механизм не поддерживается",
+        "code": 30020
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AlgorithmNotSupported",
+        "message": "Алгоритм не поддерживается",
+        "code": 30021
+    },
+    {
+        "category": "Crypto",
+        "codeName": "SignatureTypeNotSupported",
+        "message": "Тип подписи не поддерживается",
+        "code": 30022
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ProviderNotSupportedAlgorithm",
+        "message": "Алгоритм не поддерживается провайдером",
+        "code": 30023
+    },
+    {
+        "category": "Crypto",
+        "codeName": "IdentificationKindNotSupported",
+        "message": "Некорректное значение параметра certificateRequest.identificationKind",
+        "code": 30024
+    },
+    {
+        "category": "Crypto",
+        "codeName": "PersistentVisualizationNotSupported",
+        "message": "Некорректное значение параметра visualization.persistent",
+        "code": 30025
+    },
+    {
+        "category": "Crypto",
+        "codeName": "WriteToStoreForbidden",
+        "message": "Изменения в данном хранилище запрещены",
+        "code": 30026
+    },
+    {
+        "category": "Crypto",
+        "codeName": "SignToElementXPathNotExists",
+        "message": "signToElementXPath не найден в xml",
+        "code": 30027
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ElementToSignXPathNotExists",
+        "message": "elementToSignXPath не найден в xml",
+        "code": 30028
+    },
+    {
+        "category": "Crypto",
+        "codeName": "KeyUsageNotFound",
+        "message": "Запрашиваемая операция запрещена параметрами использования ключа сертификата",
+        "code": 30029
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ProviderNameEmpty",
+        "message": "Не задано имя криптопровайдера при создании дескриптора",
+        "code": 30030
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateInTokenContainer",
+        "message": "Сертификат уже содержится в контейнере на токене",
+        "code": 30031
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateInstallFailed",
+        "message": "Ошибка установки сертификата",
+        "code": 30032
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ProviderNotSupported",
+        "message": "Провайдер не поддерживается",
+        "code": 30033
+    },
+    {
+        "category": "Crypto",
+        "codeName": "XmlInitializeProviderNotFound",
+        "message": "Не найден криптопровайдер для инициализации XML-криптографии",
+        "code": 30034
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ContainerInTokenNotExists",
+        "message": "Не найден соответствующий сертификату контейнер на токене",
+        "code": 30035
+    },
+    {
+        "category": "Crypto",
+        "codeName": "XmlSignatureFailed",
+        "message": "Ошибка подписи XML",
+        "code": 30036
+    },
+    {
+        "category": "Crypto",
+        "codeName": "XmlCanonocalizationFailed",
+        "message": "Ошибка канонизации XML",
+        "code": 30037
+    },
+    {
+        "category": "Crypto",
+        "codeName": "TokenLimitations",
+        "message": "Ограничения токена",
+        "code": 30038
+    },
+    {
+        "category": "Crypto",
+        "codeName": "ProviderAlgorithmFailed",
+        "message": "Невозможно установить алгоритм",
+        "code": 30039
+    },
+    {
+        "category": "Crypto",
+        "codeName": "InvalidContentData",
+        "message": "Некорректный формат данных в поле content",
+        "code": 30040
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateRequestFailed",
+        "message": "Некорректные значения параметров при формировании запроса на выпуск сертификата",
+        "code": 30041
+    },
+    {
+        "category": "Crypto",
+        "codeName": "TokenResourcesNotFound",
+        "message": "Не найдены библиотеки для токена",
+        "code": 30042
+    },
+    {
+        "category": "Crypto",
+        "codeName": "TokenInitializeFailed",
+        "message": "Ошибка инициализации ресурсов токена",
+        "code": 30043
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateRemoveFailed",
+        "message": "Ошибка удаления сертификата",
+        "code": 30044
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateContextFailed",
+        "message": "Ошибка контекста сертификата",
+        "code": 30045
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateFormatNotSupported",
+        "message": "Формат сертификата не поддерживается",
+        "code": 30046
+    },
+    {
+        "category": "Crypto",
+        "codeName": "InvalidProviderTypeSpecified",
+        "message": "Указан неверный тип провайдера для данного сертификата",
+        "code": 30047
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AttributeValueInvalid",
+        "message": "Некорректное значение атрибута",
+        "code": 30048
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AttributeNameInvalid",
+        "message": "Некорректный атрибут",
+        "code": 30049
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AttributeTypeInvalid",
+        "message": "Некорректный тип атрибута",
+        "code": 30050
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AttributeNameDublicate",
+        "message": "Дублирование атрибута",
+        "code": 30051
+    },
+    {
+        "category": "Crypto",
+        "codeName": "PinEntryLimitReached",
+        "message": "Превышено разрешенное количество попыток ввода пароля",
+        "code": 30052
+    },
+    {
+        "category": "Crypto",
+        "codeName": "AuthorisationRejected",
+        "message": "Отказано в доступе",
+        "code": 30053
+    },
+    {
+        "category": "Crypto",
+        "codeName": "NoCertificates",
+        "message": "Отсутствуют сертификаты",
+        "code": 30054
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateChainFailed",
+        "message": "Ошибка проверки цепочки сертификатов",
+        "code": 30055
+    },
+    {
+        "category": "Crypto",
+        "codeName": "CertificateNotValid",
+        "message": "Сертификат недействителен",
+        "code": 30056
+    },
+    {
+        "category": "Crypto",
+        "codeName": "LicenseError",
+        "message": "Отсутствует лицензия",
+        "code": 30057
+    },
+    {
+        "category": "Crypto",
+        "codeName": "DecryptError",
+        "message": "Ошибка расшифрования",
+        "code": 30058
+    },
+    {
+        "category": "Crypto",
+        "codeName": "OperationNotSupportedByProvider",
+        "message": "Операция не поддерживается криптопровайдером",
+        "code": 30059
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoRoot",
+        "message": "Отсутствует корневой элемент",
+        "code": 31000
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoAttribute",
+        "message": "Отсутствует атрибут",
+        "code": 31001
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoValue",
+        "message": "Отсутствует значение",
+        "code": 31002
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoElement",
+        "message": "Отсутствует элемент",
+        "code": 31003
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoChild",
+        "message": "Отсутствует дочерний элемент",
+        "code": 31004
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoNextSibling",
+        "message": "Отсутствует следующий соседний элемент",
+        "code": 31005
+    },
+    {
+        "category": "Xml",
+        "codeName": "DomParseFailed",
+        "message": "Ошибка при разборе DOM",
+        "code": 31006
+    },
+    {
+        "category": "Xml",
+        "codeName": "XsdValidationFailed",
+        "message": "Ошибка проверки XSD (XML Schema Definition) на соответствие",
+        "code": 31007
+    },
+    {
+        "category": "Xml",
+        "codeName": "DomSerializeFailed",
+        "message": "Ошибка сериализации DOM",
+        "code": 31008
+    },
+    {
+        "category": "Xml",
+        "codeName": "XpathRequestFailed",
+        "message": "Ошибка выполнения запроса XPath",
+        "code": 31009
+    },
+    {
+        "category": "Xml",
+        "codeName": "XsltTransformFailed",
+        "message": "Ошибка преобразования XSLT",
+        "code": 31010
+    },
+    {
+        "category": "Xml",
+        "codeName": "NoPrevSibling",
+        "message": "Отсутствует предыдущий соседний элемент",
+        "code": 31011
+    },
+    {
+        "category": "Xml",
+        "codeName": "IncorrectSignXPath",
+        "message": "Некорректное значение параметра signToElementXPath",
+        "code": 31012
+    },
+    {
+        "category": "Xml",
+        "codeName": "NamespaceIsExpected",
+        "message": "Ожидается namespace",
+        "code": 31013
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrTokenWriteProtected",
+        "message": "Токен защищен от записи",
+        "code": 40226
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrNeedToCreateThreads",
+        "message": "Необходимо создать потоки",
+        "code": 40009
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrEncryptedDataLenRange",
+        "message": "Длина зашифрованных данных вне допустимого диапазона",
+        "code": 40065
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrCancel",
+        "message": "Отмена операции",
+        "code": 40001
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrObjectHandleInvalid",
+        "message": "Недопустимый дескриптор объекта",
+        "code": 40130
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrHostMemory",
+        "message": "Недостаточно памяти у хоста",
+        "code": 40002
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSlotIdInvalid",
+        "message": "Недопустимый идентификатор слота",
+        "code": 40003
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrGeneralError",
+        "message": "Общая ошибка токена",
+        "code": 40005
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFunctionFailed",
+        "message": "Функция завершилась неудачно",
+        "code": 40006
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrArgumentsBad",
+        "message": "Неверные аргументы",
+        "code": 40007
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrNoEvent",
+        "message": "Нет события",
+        "code": 40008
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUnwrappingKeySizeRange",
+        "message": "Длина ключа расшифровки вне допустимого диапазона",
+        "code": 40241
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrCantLock",
+        "message": "Невозможно заблокировать",
+        "code": 40010
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrOperationActive",
+        "message": "Активная операция",
+        "code": 40144
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFunctionCanceled",
+        "message": "Функция отменена",
+        "code": 40080
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrAttributeReadOnly",
+        "message": "Атрибут доступен только для чтения",
+        "code": 40016
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrOperationNotInitialized",
+        "message": "Операция не инициализирована",
+        "code": 40145
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFunctionNotParallel",
+        "message": "Функция не поддерживается параллельно",
+        "code": 40081
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrAttributeSensitive",
+        "message": "Атрибут является важным",
+        "code": 40017
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrAttributeTypeInvalid",
+        "message": "Недопустимый тип атрибута",
+        "code": 40018
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrAttributeValueInvalid",
+        "message": "Недопустимое значение атрибута",
+        "code": 40019
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinIncorrect",
+        "message": "Неверный PIN-код",
+        "code": 40160
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyHandleInvalid",
+        "message": "Недопустимый дескриптор ключа",
+        "code": 40096
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDataInvalid",
+        "message": "Недопустимые данные",
+        "code": 40032
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinInvalid",
+        "message": "Недопустимый PIN-код",
+        "code": 40161
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDataLenRange",
+        "message": "Длина данных вне допустимого диапазона",
+        "code": 40033
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionClosed",
+        "message": "Сеанс закрыт",
+        "code": 40176
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrMechanismInvalid",
+        "message": "Недопустимый механизм",
+        "code": 40112
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDeviceError",
+        "message": "Ошибка устройства",
+        "code": 40048
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionCount",
+        "message": "Превышено количество сеансов",
+        "code": 40177
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrMechanismParamInvalid",
+        "message": "Недопустимые параметры механизма",
+        "code": 40113
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDeviceMemory",
+        "message": "Недостаточно памяти у устройства",
+        "code": 40049
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDeviceRemoved",
+        "message": "Устройство отключено",
+        "code": 40050
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrEncryptedDataInvalid",
+        "message": "Недопустимые зашифрованные данные",
+        "code": 40064
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFunctionNotSupported",
+        "message": "Функция не поддерживается",
+        "code": 40084
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinLenRange",
+        "message": "Длина PIN-кода вне допустимого диапазона",
+        "code": 40162
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeySizeRange",
+        "message": "Длина ключа вне допустимого диапазона",
+        "code": 40098
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinExpired",
+        "message": "Срок действия PIN-кода истек",
+        "code": 40163
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyTypeInconsistent",
+        "message": "Несоответствие типа ключа",
+        "code": 40099
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinLocked",
+        "message": "PIN-код заблокирован",
+        "code": 40164
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyNotNeeded",
+        "message": "Ключ не требуется",
+        "code": 40100
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyChanged",
+        "message": "Ключ изменен",
+        "code": 40101
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicyDigit",
+        "message": "Политика PIN: цифра",
+        "code": 49051
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyNeeded",
+        "message": "Требуется ключ",
+        "code": 40102
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyIndigestible",
+        "message": "Невозможно обработать ключ",
+        "code": 40103
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyFunctionNotPermitted",
+        "message": "Функция с ключом не разрешена",
+        "code": 40104
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserPinNotInitialized",
+        "message": "PIN-код пользователя не инициализирован",
+        "code": 40258
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyNotWrappable",
+        "message": "Ключ не может быть упакован",
+        "code": 40105
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrTemplateInconsistent",
+        "message": "Несогласованный шаблон",
+        "code": 40209
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrKeyUnextractable",
+        "message": "Невозможно извлечь ключ",
+        "code": 40106
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionHandleInvalid",
+        "message": "Недопустимый дескриптор сеанса",
+        "code": 40179
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionParallelNotSupported",
+        "message": "Параллельные сеансы не поддерживаются",
+        "code": 40180
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionReadOnly",
+        "message": "Сеанс доступен только для чтения",
+        "code": 40181
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionExists",
+        "message": "Сеанс уже существует",
+        "code": 40182
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionReadOnlyExists",
+        "message": "Сеанс только для чтения уже существует",
+        "code": 40183
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSessionReadWriteSoExists",
+        "message": "Сеанс для чтения и записи с данными пользовательского объекта уже существует",
+        "code": 40184
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserAlreadyLoggedIn",
+        "message": "Пользователь уже вошел в систему",
+        "code": 40256
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSignatureInvalid",
+        "message": "Недопустимая подпись",
+        "code": 40192
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserNotLoggedIn",
+        "message": "Пользователь не вошел в систему",
+        "code": 40257
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSignatureLenRange",
+        "message": "Длина подписи вне допустимого диапазона",
+        "code": 40193
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrTemplateIncomplete",
+        "message": "Неполный шаблон",
+        "code": 40208
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrTokenNotPresent",
+        "message": "Токен отсутствует",
+        "code": 40224
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrTokenNotRecognized",
+        "message": "Токен не распознан",
+        "code": 40225
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicyCase",
+        "message": "Политика PIN: регистр",
+        "code": 49050
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUnwrappingKeyHandleInvalid",
+        "message": "Недопустимый дескриптор ключа расшифровки",
+        "code": 40240
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUnwrappingKeyTypeInconsistent",
+        "message": "Несогласованный тип ключа расшифровки",
+        "code": 40242
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserTypeInvalid",
+        "message": "Недопустимый тип пользователя",
+        "code": 40259
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserAnotherAlreadyLoggedIn",
+        "message": "Другой пользователь уже вошел в систему",
+        "code": 40260
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrUserTooManyTypes",
+        "message": "Слишком много типов пользователя",
+        "code": 40261
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrWrappedKeyInvalid",
+        "message": "Недопустимый упакованный ключ",
+        "code": 40272
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrWrappedKeyLenRange",
+        "message": "Длина упакованного ключа вне допустимого диапазона",
+        "code": 40274
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrWrappingKeyHandleInvalid",
+        "message": "Недопустимый дескриптор ключа упаковки",
+        "code": 40275
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrWrappingKeySizeRange",
+        "message": "Длина ключа упаковки вне допустимого диапазона",
+        "code": 40276
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLogNotFound",
+        "message": "Журнал не найден",
+        "code": 49059
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrWrappingKeyTypeInconsistent",
+        "message": "Несогласованный тип ключа упаковки",
+        "code": 40277
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrRandomSeedNotSupported",
+        "message": "Случайное начальное значение не поддерживается",
+        "code": 40288
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrRandomNoRng",
+        "message": "Отсутствует генератор случайных чисел",
+        "code": 40289
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrDomainParamsInvalid",
+        "message": "Недопустимые параметры домена",
+        "code": 40304
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrBufferTooSmall",
+        "message": "Слишком маленький буфер",
+        "code": 40336
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrSavedStateInvalid",
+        "message": "Недопустимое сохраненное состояние",
+        "code": 40352
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrInformationSensitive",
+        "message": "Информация чувствительна",
+        "code": 40368
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrStateUnsaveable",
+        "message": "Состояние не может быть сохранено",
+        "code": 40384
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrCryptokiNotInitialized",
+        "message": "Библиотека Cryptoki не инициализирована",
+        "code": 40400
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrCryptokiAlreadyInitialized",
+        "message": "Библиотека Cryptoki уже инициализирована",
+        "code": 40401
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrMutexBad",
+        "message": "Недопустимый мьютекс",
+        "code": 40416
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrMutexNotLocked",
+        "message": "Мьютекс не заблокирован",
+        "code": 40417
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrNewPinMode",
+        "message": "Режим установки нового PIN",
+        "code": 40432
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrNextOtp",
+        "message": "Следующий OTP",
+        "code": 40433
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrExceededMaxIterations",
+        "message": "Превышено максимальное количество итераций",
+        "code": 40437
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFipsSelfTestFailed",
+        "message": "Самопроверка FIPS завершилась неудачно",
+        "code": 40438
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLibraryLoadFailed",
+        "message": "Библиотека ICL не найдена",
+        "code": 40439
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLogNoFreeSpace",
+        "message": "Нет свободного места в журнале",
+        "code": 49058
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinTooWeak",
+        "message": "Пин-код слишком слабый",
+        "code": 40440
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPublicKeyInvalid",
+        "message": "Недопустимый открытый ключ",
+        "code": 40441
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrFunctionRejected",
+        "message": "Функция отклонена",
+        "code": 40512
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrVendorDefined",
+        "message": "Определено поставщиком",
+        "code": 49000
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclLibraryNotFound",
+        "message": "Библиотека ICL не найдена",
+        "code": 49045
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrAppletStartkeyInvalid",
+        "message": "Неверный ключ запуска приложения",
+        "code": 49046
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicyAge",
+        "message": "Политика PIN: возраст",
+        "code": 49047
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicyRepeat",
+        "message": "Политика PIN: повтор",
+        "code": 49049
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicySpecchar",
+        "message": "Политика PIN: спецсимвол",
+        "code": 49052
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrPinpolicyViolation",
+        "message": "Политика PIN: нарушение",
+        "code": 49053
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLoggingNotStarted",
+        "message": "Журналирование не запущено",
+        "code": 49054
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLogAlreadyRecorded",
+        "message": "Журнал уже записан",
+        "code": 49055
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLogEof",
+        "message": "Достигнут конец файла журнала",
+        "code": 49056
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrLoggingAlreadyStarted",
+        "message": "Журналирование уже запущено",
+        "code": 49057
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclJcverifyNotFound",
+        "message": "ICL JCVerify не найден",
+        "code": 49065
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclJcverifyChecksumNotFound",
+        "message": "Проверка целостности ICL JCVerify не найдена",
+        "code": 49066
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclChecksumNotFound",
+        "message": "Проверка целостности ICL не найдена",
+        "code": 49067
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclJcverifyChecksum",
+        "message": "Проверка целостности ICL JCVerify",
+        "code": 49068
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclChecksum",
+        "message": "Проверка целостности ICL",
+        "code": 49069
+    },
+    {
+        "category": "Cryptoki",
+        "codeName": "CkrIclNotIcl",
+        "message": "ICL не является ICL",
+        "code": 49070
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrFailed",
+        "message": "Общая ошибка ssl",
+        "code": 50001
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrInitCryptoFailed",
+        "message": "Ошибка инициализации",
+        "code": 50002
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrLoadEngineFailed",
+        "message": "Ошибка загрузки engine",
+        "code": 50003
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrUnloadEngineFailed",
+        "message": "Ошибка выгрузки engine",
+        "code": 50004
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrInitEngineFailed",
+        "message": "Ошибка инициализации engine",
+        "code": 50005
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrSetDefaultEngineFailed",
+        "message": "Ошибка установки engine по умолчанию",
+        "code": 50006
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrGetCmsSignatureFailed",
+        "message": "Ошибка получения CMS подписи",
+        "code": 50007
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrVerifyResponseFailed",
+        "message": "Ошибка валидации подписи",
+        "code": 50008
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrAddTimestampFailed",
+        "message": "Ошибка добавления метки времени",
+        "code": 50009
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrEnvDigestFailed",
+        "message": "Ошибка дайджеста",
+        "code": 50010
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrSetAlgorithmFailed",
+        "message": "Ошибка установки алгоритма",
+        "code": 50011
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrSetMessageFailed",
+        "message": "Ошибка установки сообщения",
+        "code": 50012
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrSetRandFailed",
+        "message": "Ошибка установки генератора случайных чисел",
+        "code": 50013
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrSetValueFailed",
+        "message": "Ошибка установки значения",
+        "code": 50014
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCsrSetValueFailed",
+        "message": "Ошибка добавления атрибута CSR",
+        "code": 50015
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCsrSetPublicKeyFailed",
+        "message": "Ошибка установки публичного ключа в CSR",
+        "code": 50016
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCsrSignFailed",
+        "message": "Ошибка подписи CSR",
+        "code": 50017
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCsrFailed",
+        "message": "Ошибка формирования CSR",
+        "code": 50018
+    },
+    {
+        "category": "Ssl",
+        "codeName": "AddSignedAttrFailed",
+        "message": "Ошибка добавления подписанного атрибута подписи",
+        "code": 50019
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrXmlReadMemoryFailed",
+        "message": "Ошибка чтения XML",
+        "code": 50040
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrXmlGetRootFailed",
+        "message": "Ошибка получения корневого элемента XML",
+        "code": 50041
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrXmlFindNodeFailed",
+        "message": "Ошибка поиска узла XML",
+        "code": 50042
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrXmlCreateNodeFailed",
+        "message": "Ошибка создания узла XML",
+        "code": 50043
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCmsConvertFailed",
+        "message": "Ошибка конвертации CMS",
+        "code": 50044
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrCmsDataInitFailed",
+        "message": "Ошибка инициализации CMS",
+        "code": 50045
+    },
+    {
+        "category": "Ssl",
+        "codeName": "SrBioWriteFailed",
+        "message": "Ошибка записи в BIO",
+        "code": 50046
+    }
+]

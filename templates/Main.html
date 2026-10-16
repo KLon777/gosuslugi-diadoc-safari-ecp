@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+</head>
+<body>
+    <h1>__APP_NAME__</h1>
+    <p class="lead">__DESCRIPTION__</p>
+
+    <ul class="status">
+        <li id="plugin"><span class="dot"></span><span class="label">__PLUGIN_NAME__</span><span class="value">проверяю…</span></li>
+        <li id="bridge"><span class="dot"></span><span class="label">Мост</span><span class="value">проверяю…</span></li>
+        <li id="extension"><span class="dot"></span><span class="label">Расширение в Safari</span><span class="value">проверяю…</span></li>
+    </ul>
+
+    <p class="hint" id="hint"></p>
+
+    <div class="buttons">
+        <button class="primary" id="open">Открыть настройки Safari…</button>
+        <button id="refresh">Обновить</button>
+    </div>
+    <p class="small">Окно можно закрыть — мост продолжит работать в фоне и запускается сам при входе в систему.
+        <a href="#" id="uninstall">Убрать мост из автозапуска</a></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+* { -webkit-user-select: none; user-select: none; cursor: default; }
+:root { color-scheme: light dark; --spacing: 14px; }
+html { height: 100%; }
+body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: var(--spacing); margin: 0 calc(var(--spacing) * 2); height: 100%;
+    font: -apple-system-short-body; text-align: center;
+}
+h1 { font: -apple-system-headline; font-size: 20px; margin: 0; }
+p { margin: 0; }
+.lead { opacity: .8; max-width: 440px; }
+.status { list-style: none; padding: 0; margin: 0; width: 100%; max-width: 380px; }
+.status li { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid rgba(127,127,127,.2); }
+.status .label { flex: 1; text-align: left; }
+.status .value { opacity: .8; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #999; }
+.ok .dot { background: #34c759; }
+.bad .dot { background: #ff3b30; }
+.hint { min-height: 2.6em; max-width: 440px; }
+.buttons { display: flex; gap: 8px; }
+button { font-size: 1em; }
+.small { font-size: 11px; opacity: .6; max-width: 440px; }
+.small a { color: inherit; cursor: pointer; }

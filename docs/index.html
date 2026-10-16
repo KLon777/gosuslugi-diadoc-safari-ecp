@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЭЦП в Safari на Mac: Госуслуги, Диадок, ФНС — вход и подпись документов</title>
+<meta name="description" content="Как войти по электронной подписи и подписывать документы на Госуслугах, в Диадоке и в личном кабинете ФНС (nalog.ru) в Safari на macOS. Бесплатные приложения Gosplugin Safari, Kontur Safari и CryptoPro Safari для Госплагина, Контур.Плагина и КриптоПро ЭЦП Browser plug-in, КриптоПро CSP, Рутокен.">
+<meta name="keywords" content="Госуслуги, ЕСИА, Диадок, Контур, Госплагин, Контур.Плагин, КриптоПро, ЭЦП, КЭП, электронная подпись, подпись документов, вход по ЭЦП, Safari, macOS, Рутокен, JaCarta, Госуслуги Safari, ЭЦП Safari Mac, Госплагин Safari, Диадок Safari, Контур.Плагин macOS, КриптоПро Safari, вход по электронной подписи Mac, подпись документов Safari, ЕСИА Safari, Рутокен Mac, nalog.ru Safari, ФНС ЭЦП Safari, личный кабинет налогоплательщика Safari, КриптоПро ЭЦП Browser plug-in Safari, CAdES Safari, cadesplugin Safari">
+<link rel="canonical" href="https://klon777.github.io/gosuslugi-diadoc-safari-ecp/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="ЭЦП в Safari на Mac: Госуслуги и Диадок">
+<meta property="og:description" content="Вход и подпись документов по ЭЦП на Госуслугах, в Диадоке и на nalog.ru прямо в Safari на macOS.">
+<meta property="og:url" content="https://klon777.github.io/gosuslugi-diadoc-safari-ecp/">
+<meta property="og:image" content="https://klon777.github.io/gosuslugi-diadoc-safari-ecp/dmg.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gosplugin Safari, Kontur Safari и CryptoPro Safari",
+  "operatingSystem": "macOS 12+",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Приложения для macOS, с которыми вход и подпись документов по электронной подписи (ЭЦП) работают в Safari на Госуслугах, в Диадоке, на nalog.ru и других сайтах с КриптоПро ЭЦП Browser plug-in.",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "RUB"},
+  "downloadUrl": "https://github.com/KLon777/gosuslugi-diadoc-safari-ecp/releases/latest",
+  "url": "https://klon777.github.io/gosuslugi-diadoc-safari-ecp/"
+}
+</script>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --muted:#6e6e73; --bg:#fbfbfd; --card:#fff; --line:#e5e5ea; --accent:#0066d9; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#111113; --card:#1c1c1e; --line:#2c2c2e; --accent:#4c9bff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height:1.15; margin: 0 0 12px; }
+  h2 { font-size: 22px; margin: 40px 0 12px; }
+  h3 { font-size: 17px; margin: 20px 0 6px; }
+  p, li { color: var(--fg); }
+  .lead { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:12px 20px; border-radius:10px; font-weight:600; margin: 4px 8px 4px 0; }
+  .btn.alt { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  .cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin: 24px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card h3 { margin-top:0; }
+  img { max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line); display:block; margin: 16px auto; }
+  .shots { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+  code { background: var(--card); border:1px solid var(--line); padding: 1px 5px; border-radius:5px; font-size: 14px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 48px; border-top:1px solid var(--line); padding-top: 16px; }
+  a { color: var(--accent); }
+  .tags { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+<h1>ЭЦП в Safari на Mac: Госуслуги, Диадок, ФНС</h1>
+<p class="lead">Вход и подпись документов по электронной подписи прямо в Safari на macOS — без Chrome и Яндекс.Браузера.
+Работает с официальными Госплагином, Контур.Плагином, КриптоПро ЭЦП Browser plug-in, КриптоПро CSP и Рутокеном.</p>
+
+<a class="btn" href="https://github.com/KLon777/gosuslugi-diadoc-safari-ecp/releases/latest/download/ESign-Safari.dmg">Скачать ESign-Safari.dmg</a>
+<a class="btn alt" href="https://github.com/KLon777/gosuslugi-diadoc-safari-ecp#readme">Инструкция по установке</a>
+
+<div class="cards">
+  <div class="card">
+    <h3>Gosplugin Safari — Госуслуги</h3>
+    <p>Вход на Госуслуги (ЕСИА) по электронной подписи и подписание заявлений и документов в Safari через официальный Госплагин.</p>
+  </div>
+  <div class="card">
+    <h3>Kontur Safari — Диадок и Контур</h3>
+    <p>Вход в Диадок по сертификату, подписание и проверка документов в Safari через официальный Контур.Плагин — также Контур.Крипто и другие сервисы Контура.</p>
+  </div>
+  <div class="card">
+    <h3>CryptoPro Safari — ФНС и другие сайты</h3>
+    <p>Вход и подпись в личном кабинете ФНС (nalog.ru), на торговых площадках и других сайтах через КриптоПро ЭЦП Browser plug-in (CAdES).</p>
+  </div>
+</div>
+
+<img src="dmg.png" width="660" alt="Установка: перетащите Gosplugin Safari, Kontur Safari и CryptoPro Safari в папку Программы">
+
+<h2>Почему Госуслуги, Диадок и nalog.ru не работают в Safari</h2>
+<p>Госплагин и Контур.Плагин официально поддерживают только Chrome, Firefox, Яндекс.Браузер и другие браузеры на Chromium —
+их расширений для Safari нет, поэтому вход по ЭЦП и подпись документов в Safari на Mac не работают.
+Расширение КриптоПро ЭЦП Browser plug-in для Safari в новых версиях Safari не появляется в настройках, поэтому nalog.ru не видит ЭЦП.
+Эти приложения добавляют в Safari расширения для всех трёх плагинов и связывают их с установленными на Mac
+Госплагином, Контур.Плагином и КриптоПро ЭЦП Browser plug-in.</p>
+
+<h2>Как установить</h2>
+<ol>
+  <li>Установите <a href="https://www.cryptopro.ru/products/csp/downloads">КриптоПро CSP</a> с лицензией и нужный плагин:
+    <a href="https://www.gosuslugi.ru/landing/gosplugin">Госплагин</a>, <a href="https://install.kontur.ru">Контур.Плагин</a> или <a href="https://www.cryptopro.ru/products/cades/plugin">КриптоПро ЭЦП Browser plug-in</a>.</li>
+  <li>Скачайте <code>ESign-Safari.dmg</code> и перетащите приложение в «Программы».</li>
+  <li>Подпишите приложение своим бесплатным сертификатом Apple Development — или включите в Safari
+    «Разработка → Разрешить неподписанные расширения». Подробно — в <a href="https://github.com/KLon777/gosuslugi-diadoc-safari-ecp#readme">инструкции</a>.</li>
+  <li>Запустите приложение, нажмите «Открыть настройки Safari…» и включите расширение.</li>
+</ol>
+
+<div class="shots">
+  <img src="app-gosplugin.png" alt="Окно Gosplugin Safari: Госплагин установлен, мост работает, расширение включено">
+  <img src="app-kontur.png" alt="Окно Kontur Safari: Контур.Плагин установлен, мост работает, расширение включено">
+  <img src="app-cryptopro.png" alt="Окно CryptoPro Safari: КриптоПро ЭЦП Browser plug-in установлен, мост работает, расширение включено">
+</div>
+
+<h2>Частые вопросы</h2>
+<h3>Можно ли подписывать документы на Госуслугах в Safari?</h3>
+<p>Да — не только входить через ЕСИА, но и подписывать заявления и документы электронной подписью.</p>
+<h3>Диадок не видит сертификат в Safari — что делать?</h3>
+<p>Установите Контур.Плагин и Kontur Safari: Диадок увидит сертификат, через него можно войти, подписывать и проверять документы.</p>
+<h3>Личный кабинет ФНС (nalog.ru) не видит ЭЦП в Safari — что делать?</h3>
+<p>Установите КриптоПро ЭЦП Browser plug-in и CryptoPro Safari: nalog.ru увидит сертификат, можно входить и подписывать документы.</p>
+<h3>Нужен ли Chrome?</h3>
+<p>Нет. Нужны КриптоПро CSP, нужный плагин (Госплагин, Контур.Плагин или КриптоПро ЭЦП Browser plug-in) и приложение отсюда.</p>
+<h3>Какие носители поддерживаются?</h3>
+<p>Любые, которые видит КриптоПро CSP: Рутокен, JaCarta, ESMART и другие.</p>
+<h3>Подходит для Mac на M1–M4?</h3>
+<p>Да, приложения универсальные: Apple Silicon и Intel, macOS 12 и новее, Safari 16 и новее.</p>
+
+<p class="tags">Теги: Госуслуги · ЕСИА · Диадок · Контур · ФНС · nalog.ru · Госплагин · Контур.Плагин · КриптоПро · КриптоПро ЭЦП Browser plug-in · CAdES · ЭЦП · КЭП · электронная подпись · подпись документов · вход по ЭЦП · Safari · macOS · Mac · Рутокен · JaCarta</p>
+<footer>
+  Бесплатный проект с открытым исходным кодом: <a href="https://github.com/KLon777/gosuslugi-diadoc-safari-ecp">github.com/KLon777/gosuslugi-diadoc-safari-ecp</a>.
+  Не связан с Ростелекомом, Минцифры, СКБ Контур или КриптоПро; Госплагин, Контур.Плагин, КриптоПро ЭЦП Browser plug-in и КриптоПро CSP принадлежат их правообладателям.
+</footer>
+</main>
+</body>
+</html>
