@@ -52,7 +52,7 @@ Chrome не нужен: плагины ставятся обычными уст�
    <p align="center"><img src="docs/app-cryptopro.png" width="380" alt="Окно CryptoPro Safari"></p>
 
 5. Нажмите **«Открыть настройки Safari…»**. В списке слева поставьте галочку у расширения
-   (Госплагин, Контур.Расширение или CryptoPro Safari Extension), затем **«Изменить сайты…» → Разрешить**:
+   (Госплагин, Контур.Расширение или Extension for CAdES Browser Plugin — это КриптоПро), затем **«Изменить сайты…» → Разрешить**:
 
    <p align="center"><img src="docs/safari-extension.png" width="560" alt="Настройки Safari, расширение Госплагин"></p>
 
