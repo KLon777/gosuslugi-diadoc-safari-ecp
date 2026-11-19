@@ -29,9 +29,30 @@
   "permissions": [
     "nativeMessaging",
     "tabs",
-    "scripting"
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
     "<all_urls>"
-  ]
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "kontur_ua.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "kontur_ua",
+        "enabled": true,
+        "path": "kontur_ua_rules.json"
+      }
+    ]
+  }
 }

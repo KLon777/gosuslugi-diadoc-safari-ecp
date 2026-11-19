@@ -73,6 +73,40 @@ def patch_kontur(out, shim):
                      "if (request.isNewType || !oldExtension.enabled) { // Safari: нет chrome.management",
                      1, "kontur searchError")
     open(p, "w", encoding="utf-8").write(shim + "\n" + s)
+    patch_kontur_ua(out)
+
+
+KONTUR_UA_LOADER = """// ===== Safari (NMA): на сайтах Контура страница видит Chrome (kontur_ua.js, kontur_ua_rules.json) =====
+(function () {
+    try {
+        if (!/(^|\\.)(kontur\\.ru|skbkontur\\.ru|kontur\\.tech|diadoc\\.ru|kontur-ca\\.ru)$/.test(location.hostname)) return;
+        var el = document.createElement("script");
+        el.src = chrome.runtime.getURL("kontur_ua.js");
+        el.onload = el.onerror = function () { el.remove(); };
+        (document.head || document.documentElement).appendChild(el);
+    } catch (e) {}
+})();
+"""
+
+
+def patch_kontur_ua(out):
+    """Подмена User-Agent на Chrome для сайтов Контура (JS-часть + заголовок запроса)."""
+    shutil.copy(os.path.join(ROOT, "extension", "kontur_ua.js"), os.path.join(out, "kontur_ua.js"))
+    shutil.copy(os.path.join(ROOT, "extension", "kontur_ua_rules.json"), os.path.join(out, "kontur_ua_rules.json"))
+    p = os.path.join(out, "content.js")
+    s = open(p, encoding="utf-8").read()
+    open(p, "w", encoding="utf-8").write(KONTUR_UA_LOADER + s)
+    mp = os.path.join(out, "manifest.json")
+    m = json.load(open(mp, encoding="utf-8"))
+    war = m.setdefault("web_accessible_resources", [])
+    war.append({"resources": ["kontur_ua.js"], "matches": ["<all_urls>"]})
+    m["declarative_net_request"] = {"rule_resources": [
+        {"id": "kontur_ua", "enabled": True, "path": "kontur_ua_rules.json"}]}
+    perms = m.setdefault("permissions", [])
+    for x in ("declarativeNetRequest", "declarativeNetRequestWithHostAccess"):
+        if x not in perms:
+            perms.append(x)
+    json.dump(m, open(mp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
 CADES_HOOK_LOADER = """// ===== Safari (NMA): адрес nmcades_plugin_api.js для cadesplugin_api.js, см. cades_safari_hook.js =====

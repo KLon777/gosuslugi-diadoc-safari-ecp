@@ -212,6 +212,7 @@ on wizard()
 	set progress completed steps to 0
 	set progress description to "Устанавливаю…"
 	set installed to {}
+	set failedBridges to {}
 	set n to 0
 	repeat with k from 1 to count of picked
 		set i to item k of picked
@@ -220,7 +221,10 @@ on wizard()
 		set src to srcDir & "/" & nm & ".app"
 		set target to targetFor(i, destDir)
 		set q to quoted form of target
-		if not testMode then sh("pkill -x " & quoted form of nm & " || true")
+		set agentId to (item i of appIds) & ".bridge"
+		set uidN to do shell script "id -u"
+		-- сначала останавливаем фоновый мост launchd, иначе он перезапускается на недозаписанном приложении и уходит в «штрафной» режим
+		if not testMode then sh("launchctl bootout gui/" & uidN & "/" & agentId & " 2>/dev/null; pkill -x " & quoted form of nm & " || true; sleep 1")
 		set cpCmd to "rm -rf " & q & " && mkdir -p \"$(dirname " & q & ")\" && ditto " & quoted form of src & " " & q & " && xattr -cr " & q
 		try
 			sh(cpCmd)
@@ -232,7 +236,30 @@ on wizard()
 			sh("codesign --verify --deep --strict " & q & " 2>&1")
 		end if
 		-- запуск: приложение ставит фоновый мост в автозапуск и регистрирует расширение в Safari
-		if not testMode then sh("open " & q)
+		if not testMode then
+			sh("open " & q)
+			-- ждём мост; если не поднялся — перерегистрируем LaunchAgent
+			set bridgePort to 9104 + i
+			set pingCmd to "curl -s -m 2 -X POST -H 'X-NMA: 1' -d '{\"op\":\"ping\"}' http://127.0.0.1:" & bridgePort & "/h"
+			set okBridge to false
+			repeat 8 times
+				delay 1
+				try
+					if (do shell script pingCmd) contains "ok" then
+						set okBridge to true
+						exit repeat
+					end if
+				end try
+			end repeat
+			if not okBridge then
+				try
+					sh("P=\"$HOME/Library/LaunchAgents/" & agentId & ".plist\"; launchctl bootout gui/" & uidN & " \"$P\" 2>/dev/null; launchctl bootstrap gui/" & uidN & " \"$P\"; launchctl kickstart -k gui/" & uidN & "/" & agentId)
+					delay 3
+					if (do shell script pingCmd) contains "ok" then set okBridge to true
+				end try
+			end if
+			if not okBridge then set end of failedBridges to nm
+		end if
 		set end of installed to target
 		set n to n + 1
 		set progress completed steps to n
@@ -240,6 +267,8 @@ on wizard()
 
 	-- Шаг 6. Что дальше
 	set msg to "Установлено:" & return & "• " & joinList(installed, return & "• ") & return & return
+	if (count of failedBridges) > 0 then set msg to msg & "⚠️ Фоновый мост не ответил у: " & joinList(failedBridges, ", ") & ". Откройте приложение вручную и перезапустите Safari." & return & return
+	set msg to msg & "Перезапустите Safari и обновите открытые вкладки." & return & return
 	if ident is "" then
 		set msg to msg & "Приложения не подписаны. В Safari: Настройки → Дополнения → «Показывать функции для веб-разработчиков», затем в строке меню «Разработка → Разрешить неподписанные расширения» (после каждого перезапуска Safari)." & return & return
 	else

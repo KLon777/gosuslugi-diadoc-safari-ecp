@@ -24,6 +24,8 @@
 		8FBBDD333082703A00654500 /* kontur-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBDD2C3082703A00654500 /* kontur-48.png */; };
 		8FBBDD343082703A00654500 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBDD2D3082703A00654500 /* _locales */; };
 		8FBBDD353082703A00654500 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBDD2E3082703A00654500 /* content.js */; };
+		8FBBDD5B3082703A00654500 /* kontur_ua.js in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBDD5A3082703A00654500 /* kontur_ua.js */; };
+		8FBBDD5D3082703A00654500 /* kontur_ua_rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBDD5C3082703A00654500 /* kontur_ua_rules.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		8FBBDD2C3082703A00654500 /* kontur-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kontur-48.png"; path = "Resources/kontur-48.png"; sourceTree = "<group>"; };
 		8FBBDD2D3082703A00654500 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
 		8FBBDD2E3082703A00654500 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		8FBBDD5A3082703A00654500 /* kontur_ua.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = kontur_ua.js; path = Resources/kontur_ua.js; sourceTree = "<group>"; };
+		8FBBDD5C3082703A00654500 /* kontur_ua_rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = kontur_ua_rules.json; path = Resources/kontur_ua_rules.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				8FBBDD2C3082703A00654500 /* kontur-48.png */,
 				8FBBDD2D3082703A00654500 /* _locales */,
 				8FBBDD2E3082703A00654500 /* content.js */,
+				8FBBDD5C3082703A00654500 /* kontur_ua_rules.json */,
+				8FBBDD5A3082703A00654500 /* kontur_ua.js */,
 			);
 			name = Resources;
 			path = "Kontur Safari Extension";
@@ -248,6 +254,8 @@
 				8FBBDD2F3082703A00654500 /* background.js in Resources */,
 				8FBBDD313082703A00654500 /* manifest.json in Resources */,
 				8FBBDD353082703A00654500 /* content.js in Resources */,
+				8FBBDD5D3082703A00654500 /* kontur_ua_rules.json in Resources */,
+				8FBBDD5B3082703A00654500 /* kontur_ua.js in Resources */,
 				8FBBDD303082703A00654500 /* kontur-16.png in Resources */,
 			);
 		};

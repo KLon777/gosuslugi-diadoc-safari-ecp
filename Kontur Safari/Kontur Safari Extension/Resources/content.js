@@ -1,3 +1,13 @@
+// ===== Safari (NMA): на сайтах Контура страница видит Chrome (kontur_ua.js, kontur_ua_rules.json) =====
+(function () {
+    try {
+        if (!/(^|\.)(kontur\.ru|skbkontur\.ru|kontur\.tech|diadoc\.ru|kontur-ca\.ru)$/.test(location.hostname)) return;
+        var el = document.createElement("script");
+        el.src = chrome.runtime.getURL("kontur_ua.js");
+        el.onload = el.onerror = function () { el.remove(); };
+        (document.head || document.documentElement).appendChild(el);
+    } catch (e) {}
+})();
 
 (function() {
 	if (window.KONTUR_EXTENSION_CONTENT) {
