@@ -39,35 +39,44 @@ func render(scale: CGFloat, to path: String) {
     text("Госуслуги, Диадок, ФНС и другие сайты по электронной подписи", NSRect(x: 0, y: y(88), width: W, height: 22),
          size: 14, color: NSColor(calibratedWhite: 0.35, alpha: 1))
 
-    // подложки под иконки
-    NSColor(calibratedWhite: 1, alpha: 0.55).setFill()
-    NSBezierPath(roundedRect: NSRect(x: 70, y: y(500), width: 160, height: 392), xRadius: 18, yRadius: 18).fill()
-    NSBezierPath(roundedRect: NSRect(x: 430, y: y(365), width: 160, height: 160), xRadius: 18, yRadius: 18).fill()
+    // подложки: автоматическая установка и ручная
+    NSColor(calibratedWhite: 1, alpha: 0.6).setFill()
+    NSBezierPath(roundedRect: NSRect(x: 40, y: y(292), width: W - 80, height: 180), xRadius: 18, yRadius: 18).fill()
+    NSColor(calibratedWhite: 1, alpha: 0.4).setFill()
+    NSBezierPath(roundedRect: NSRect(x: 40, y: y(530), width: W - 80, height: 222), xRadius: 18, yRadius: 18).fill()
 
-    // стрелка
-    let accent = NSColor(calibratedRed: 0.0, green: 0.4, blue: 0.85, alpha: 0.85)
-    accent.setStroke(); accent.setFill()
+    let accent = NSColor(calibratedRed: 0.0, green: 0.4, blue: 0.85, alpha: 1)
+    let ink = NSColor(calibratedWhite: 0.2, alpha: 1), muted = NSColor(calibratedWhite: 0.38, alpha: 1)
+    text("Автоматическая установка", NSRect(x: 245, y: y(152), width: 360, height: 24), size: 17, weight: .bold,
+         color: accent, align: .left)
+    text("Дважды щёлкните «Установка ЭЦП в Safari». Мастер установит все или только выбранные приложения, "
+         + "поможет подписать их вашим сертификатом и подскажет, что включить в Safari.",
+         NSRect(x: 245, y: y(236), width: 355, height: 80), size: 13, color: ink, align: .left)
+    text("Если macOS не даёт открыть: правый щелчок → «Открыть».",
+         NSRect(x: 245, y: y(270), width: 355, height: 34), size: 11.5, color: muted, align: .left)
+
+    text("Или вручную: перетащите нужные приложения в «Программы»", NSRect(x: 60, y: y(336), width: W - 120, height: 22),
+         size: 14, weight: .semibold, color: ink)
+
+    // стрелка к «Программам»
+    accent.withAlphaComponent(0.85).setStroke(); accent.withAlphaComponent(0.85).setFill()
     let line = NSBezierPath()
-    line.move(to: NSPoint(x: 252, y: y(285)))
-    line.line(to: NSPoint(x: 400, y: y(285)))
+    line.move(to: NSPoint(x: 400, y: y(425)))
+    line.line(to: NSPoint(x: 470, y: y(425)))
     line.lineWidth = 4; line.lineCapStyle = .round
-    let dash: [CGFloat] = [10, 8]
+    let dash: [CGFloat] = [9, 7]
     line.setLineDash(dash, count: 2, phase: 0)
     line.stroke()
     let head = NSBezierPath()
-    head.move(to: NSPoint(x: 414, y: y(285)))
-    head.line(to: NSPoint(x: 396, y: y(274)))
-    head.line(to: NSPoint(x: 396, y: y(296)))
+    head.move(to: NSPoint(x: 484, y: y(425)))
+    head.line(to: NSPoint(x: 466, y: y(414)))
+    head.line(to: NSPoint(x: 466, y: y(436)))
     head.close(); head.fill()
-    text("Перетащите\nв «Программы»", NSRect(x: 252, y: y(267), width: 150, height: 40), size: 13,
-         weight: .semibold, color: accent)
 
     // подсказка внизу
-    text("Затем запустите нужные приложения. Чтобы Safari загружал расширение, подпишите его своим "
-         + "сертификатом Apple Development или включите «Разработка → Разрешить неподписанные расширения». "
-         + "Инструкция: github.com/KLon777/gosuslugi-diadoc-safari-ecp",
-         NSRect(x: 40, y: y(570), width: W - 80, height: 56), size: 11.5,
-         color: NSColor(calibratedWhite: 0.3, alpha: 1))
+    text("При ручной установке подпишите приложения сами или включите «Разработка → Разрешить неподписанные "
+         + "расширения». Инструкция: github.com/KLon777/gosuslugi-diadoc-safari-ecp",
+         NSRect(x: 30, y: y(592), width: W - 60, height: 50), size: 11, color: muted)
 
     NSGraphicsContext.restoreGraphicsState()
     try! rep.representation(using: .png, properties: [:])!.write(to: URL(fileURLWithPath: path))

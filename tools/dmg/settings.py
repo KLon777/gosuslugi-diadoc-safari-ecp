@@ -9,13 +9,15 @@ format = "UDZO"
 filesystem = "HFS+"
 size = None
 
+INSTALLER = "Установка ЭЦП в Safari.app"
 files = [
+    os.path.join(apps_dir, INSTALLER),
     os.path.join(apps_dir, "Gosplugin Safari.app"),
     os.path.join(apps_dir, "Kontur Safari.app"),
     os.path.join(apps_dir, "CryptoPro Safari.app"),
 ]
 symlinks = {"Программы": "/Applications"}
-hide_extensions = ["Gosplugin Safari.app", "Kontur Safari.app", "CryptoPro Safari.app"]
+hide_extensions = [INSTALLER, "Gosplugin Safari.app", "Kontur Safari.app", "CryptoPro Safari.app"]
 
 background = os.path.join(res_dir, "background.tiff")
 show_status_bar = False
@@ -32,8 +34,9 @@ arrange_by = None
 label_pos = "bottom"
 
 icon_locations = {
-    "Gosplugin Safari.app": (150, 160),
-    "Kontur Safari.app": (150, 285),
-    "CryptoPro Safari.app": (150, 410),
-    "Программы": (510, 285),
+    INSTALLER: (140, 205),
+    "Gosplugin Safari.app": (100, 425),
+    "Kontur Safari.app": (220, 425),
+    "CryptoPro Safari.app": (340, 425),
+    "Программы": (555, 425),
 }

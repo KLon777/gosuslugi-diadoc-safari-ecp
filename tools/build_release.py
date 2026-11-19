@@ -6,7 +6,7 @@
   python3 tools/build_release.py
 
 Результат в build/release/:
-  ESign-Safari.dmg  — образ со всеми приложениями, фоном и ярлыком «Программы»
+  ESign-Safari.dmg  — образ: мастер установки, все приложения, фон и ярлык «Программы»
 
 Для DMG нужен dmgbuild:  python3 -m pip install --user dmgbuild
 """
@@ -42,6 +42,25 @@ def build_apps(out_apps):
     shutil.rmtree(dd, ignore_errors=True)
 
 
+INSTALLER = "Установка ЭЦП в Safari"
+
+
+def build_installer(out_apps):
+    """Мастер установки (AppleScript-приложение) со своим значком, подписан ad-hoc."""
+    app = os.path.join(out_apps, INSTALLER + ".app")
+    run("osacompile", "-o", app, os.path.join(ROOT, "tools", "install-wizard.applescript"))
+    res = os.path.join(app, "Contents", "Resources")
+    run("swift", os.path.join(ROOT, "tools", "dmg", "installer_icon.swift"),
+        os.path.join(res, "applet.icns"), stdout=subprocess.DEVNULL)
+    # новый osacompile берёт значок из Assets.car по CFBundleIconName — убираем, чтобы работал applet.icns
+    car = os.path.join(res, "Assets.car")
+    if os.path.exists(car):
+        os.remove(car)
+    subprocess.run(["/usr/libexec/PlistBuddy", "-c", "Delete :CFBundleIconName",
+                    os.path.join(app, "Contents", "Info.plist")], stderr=subprocess.DEVNULL)
+    run("codesign", "--force", "--deep", "-s", "-", app, stderr=subprocess.DEVNULL)
+
+
 def build_dmg(out, out_apps):
     res = os.path.join(ROOT, "build", "release-res")
     shutil.rmtree(res, ignore_errors=True)
@@ -63,6 +82,7 @@ def main():
     shutil.rmtree(out, ignore_errors=True)
     os.makedirs(out_apps)
     build_apps(out_apps)
+    build_installer(out_apps)
     build_dmg(out, out_apps)
     shutil.rmtree(out_apps, ignore_errors=True)
 
