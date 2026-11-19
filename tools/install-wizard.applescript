@@ -5,17 +5,56 @@
 -- Сборка: osacompile -o "Установка ЭЦП в Safari.app" tools/install-wizard.applescript
 -- Тест без окон: NMA_TEST=1 NMA_SRC=<папка с .app> NMA_DEST=<куда ставить> [NMA_PICK=1,3] [NMA_SIGN=1]
 --                [NMA_IDENTITY_FILTER=...] osascript tools/install-wizard.applescript
+use AppleScript version "2.4"
+use framework "Foundation"
+use framework "AppKit"
+use scripting additions
+
 property T : "Установка ЭЦП в Safari"
 property testMode : false
 property idFilter : "Apple Development"
 
 -- приложения: имя, назначение, bundle id, файл манифеста плагина, название плагина, где скачать плагин
 property appNames : {"Gosplugin Safari", "Kontur Safari", "CryptoPro Safari"}
-property appTitles : {"Gosplugin Safari — Госуслуги (Госплагин)", "Kontur Safari — Диадок и сервисы Контура (Контур.Плагин)", "CryptoPro Safari — ФНС (nalog.ru) и другие сайты (КриптоПро ЭЦП Browser plug-in)"}
+property appTitles : {"Gosplugin Safari — Госуслуги", "Kontur Safari — Диадок и сервисы Контура", "CryptoPro Safari — ФНС (nalog.ru) и сайты с КриптоПро"}
 property appIds : {"local.safaricrypto.gosplugin", "local.safaricrypto.kontur", "local.safaricrypto.cryptopro"}
 property hostFiles : {"chrome.gosuslugi.plugin.json", "kontur.plugin.json", "ru.cryptopro.nmcades.json"}
 property pluginNames : {"Госплагин", "Контур.Плагин", "КриптоПро ЭЦП Browser plug-in"}
 property pluginUrls : {"https://www.gosuslugi.ru/landing/gosplugin", "https://install.kontur.ru", "https://www.cryptopro.ru/products/cades/plugin"}
+
+-- Окно с флажками; по умолчанию отмечено всё. Возвращает список номеров или завершает мастер при отмене.
+on pickApps()
+	set n to count of appTitles
+	set rowH to 26
+	set view to current application's NSView's alloc()'s initWithFrame:{{0, 0}, {470, rowH * n + 4}}
+	set boxes to {}
+	repeat with i from 1 to n
+		set y to rowH * (n - i) + 2
+		set b to current application's NSButton's alloc()'s initWithFrame:{{0, y}, {470, 22}}
+		b's setButtonType:(current application's NSSwitchButton)
+		b's setTitle:(item i of appTitles)
+		b's setState:(current application's NSOnState)
+		view's addSubview:b
+		set end of boxes to b
+	end repeat
+	repeat
+		set al to current application's NSAlert's alloc()'s init()
+		al's setMessageText:"Что установить?"
+		al's setInformativeText:("Приложения, с которыми электронная подпись работает в Safari: вход и подписание документов на Госуслугах, в Диадоке, на nalog.ru и других сайтах." & return & "По умолчанию отмечено всё.")
+		(al's addButtonWithTitle:"Установить")
+		(al's addButtonWithTitle:"Отмена")
+		al's setAccessoryView:view
+		current application's NSApp's activateIgnoringOtherApps:true
+		set resp to al's runModal() as integer
+		if resp is not 1000 then error number -128
+		set res to {}
+		repeat with i from 1 to n
+			if ((item i of boxes)'s state() as integer) is 1 then set end of res to i
+		end repeat
+		if (count of res) > 0 then return res
+		display dialog "Отметьте хотя бы одно приложение." with title T buttons {"OK"} default button 1 with icon caution
+	end repeat
+end pickApps
 
 on getEnv(varName)
 	try
@@ -116,12 +155,6 @@ on wizard()
 	set destDir to getEnv("NMA_DEST")
 
 	-- Шаг 1. Что ставить
-	set r to askUser("Мастер установит приложения, с которыми электронная подпись работает в Safari: вход и подписание документов на Госуслугах, в Диадоке, на nalog.ru и других сайтах." & return & return & ¬
-		"• Gosplugin Safari — Госуслуги" & return & ¬
-		"• Kontur Safari — Диадок и сервисы Контура" & return & ¬
-		"• CryptoPro Safari — ФНС и сайты с КриптоПро ЭЦП Browser plug-in" & return & return & ¬
-		"Установить все или выбрать нужные?", {"Отмена", "Выбрать…", "Установить все"}, "Установить все")
-	if r is "Отмена" then error number -128
 	set picked to {1, 2, 3}
 	if testMode and getEnv("NMA_PICK") is not "" then
 		set AppleScript's text item delimiters to ","
@@ -130,14 +163,8 @@ on wizard()
 			set end of picked to (s as integer)
 		end repeat
 		set AppleScript's text item delimiters to ""
-	else if r is "Выбрать…" then
-		activate
-		set ch to choose from list appTitles with title T with prompt "Отметьте нужные приложения (⌘-щелчок — несколько):" default items appTitles with multiple selections allowed
-		if ch is false then error number -128
-		set picked to {}
-		repeat with c in ch
-			set end of picked to indexOf(c as text, appTitles)
-		end repeat
+	else if not testMode then
+		set picked to pickApps()
 	end if
 
 	-- приложения должны лежать рядом с мастером
