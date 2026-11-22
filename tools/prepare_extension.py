@@ -63,6 +63,21 @@ def patch_gos(out, shim):
     # контент-скрипт Госплагина подтверждает получение ответа (sendResponse(null)) — см. nt_shim.js
     lines.insert((max(imports) + 1) if imports else 0, "var __NMA_TAB_ACK = true;\n" + shim)
     open(p, "w", encoding="utf-8").write("\n".join(lines))
+    patch_gos_lazy(out)
+
+
+def patch_gos_lazy(out):
+    """Госплагин запускался на каждой открытой странице (content.js на DOMContentLoaded шлёт запрос config,
+    background по нему поднимает native host), и Safari из-за этого терял фокус. Теперь запрос уходит
+    только когда страница сама обратилась к плагину."""
+    p = os.path.join(out, "content.js")
+    s = open(p, encoding="utf-8", newline="").read()
+    cfg = '_request(new GosuslugiPluginMessage(_ID, "system", "config"));'
+    s = must_replace(s, cfg, "var __nmaCfg = false; function __nmaEnsureCfg() { if (__nmaCfg) return; __nmaCfg = true; " + cfg + " }",
+                     1, "gos lazy config")
+    s = must_replace(s, 'if (meta?.format?.category === "gosuslugi.plugin") {',
+                     'if (meta?.format?.category === "gosuslugi.plugin") { __nmaEnsureCfg();', 1, "gos lazy trigger")
+    open(p, "w", encoding="utf-8", newline="").write(s)
 
 
 def patch_kontur(out, shim):

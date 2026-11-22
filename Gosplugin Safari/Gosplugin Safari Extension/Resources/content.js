@@ -822,7 +822,7 @@ let content = (function () {
                 _request(new GosuslugiPluginMessage(_ID, "system", "disconnect"));
             } else {
                  bootstrap.register(_ID);
-                 _request(new GosuslugiPluginMessage(_ID, "system", "config"));
+                 var __nmaCfg = false; function __nmaEnsureCfg() { if (__nmaCfg) return; __nmaCfg = true; _request(new GosuslugiPluginMessage(_ID, "system", "config")); }
 
                  window.addEventListener("message", (event) => {
                      let message = event?.data;
@@ -830,7 +830,7 @@ let content = (function () {
                      let type = message?.method?.type;
                      let data = message?.method?.data;
 
-                     if (meta?.format?.category === "gosuslugi.plugin") {
+                     if (meta?.format?.category === "gosuslugi.plugin") { __nmaEnsureCfg();
 
                          if (message?.node === "") {
                              const id = message.id;
