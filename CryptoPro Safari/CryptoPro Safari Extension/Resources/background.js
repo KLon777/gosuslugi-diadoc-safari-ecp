@@ -26,6 +26,8 @@ function __reqKey(m) {
 	// КриптоПро: {tabid, data:{requestid}} и части ответа {tabid, requestid, partial}
 	if (m.tabid && m.data && m.data.requestid !== undefined) return "r:" + m.tabid + ":" + m.data.requestid;
 	if (m.tabid && m.requestid !== undefined && m.partial === -1) return "r:" + m.tabid + ":" + m.requestid;
+	// Контур, Диаг.Плагин (kd.nc): запрос {cmd, sid, args}, ответ {cmd, sid, type: "Control", ...}
+	if (m.sid !== undefined && m.sid !== null && m.cmd !== undefined) return "d:" + m.sid;
 	return null;
 }
 function __nativeConnect(name) {

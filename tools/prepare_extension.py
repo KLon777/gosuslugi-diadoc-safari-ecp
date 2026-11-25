@@ -91,17 +91,29 @@ def patch_kontur(out, shim):
     patch_kontur_ua(out)
 
 
-KONTUR_UA_LOADER = """// ===== Safari (NMA): на сайтах Контура страница видит Chrome (kontur_ua.js, kontur_ua_rules.json) =====
+def konturUaLoader():
+    import json as _j
+    ua = open(os.path.join(ROOT, "extension", "kontur_ua.js"), encoding="utf-8").read()
+    return """// ===== Safari (NMA): на сайтах Контура страница видит Chrome (kontur_ua.js, kontur_ua_rules.json) =====
+// Скрипт вставляется текстом, чтобы выполниться синхронно до скриптов страницы; если CSP страницы
+// запрещает inline-скрипты — подключается файлом.
 (function () {
     try {
         if (!/(^|\\.)(kontur\\.ru|skbkontur\\.ru|kontur\\.tech|diadoc\\.ru|kontur-ca\\.ru)$/.test(location.hostname)) return;
+        var root = document.documentElement || document.head;
         var el = document.createElement("script");
-        el.src = chrome.runtime.getURL("kontur_ua.js");
-        el.onload = el.onerror = function () { el.remove(); };
-        (document.head || document.documentElement).appendChild(el);
+        el.textContent = %s;
+        root.appendChild(el);
+        el.remove();
+        if (root.getAttribute("data-nma-ua") !== "1") {
+            var f = document.createElement("script");
+            f.src = chrome.runtime.getURL("kontur_ua.js");
+            f.onload = f.onerror = function () { f.remove(); };
+            root.appendChild(f);
+        }
     } catch (e) {}
 })();
-"""
+""" % _j.dumps(ua, ensure_ascii=False)
 
 
 def patch_kontur_ua(out):
@@ -110,7 +122,7 @@ def patch_kontur_ua(out):
     shutil.copy(os.path.join(ROOT, "extension", "kontur_ua_rules.json"), os.path.join(out, "kontur_ua_rules.json"))
     p = os.path.join(out, "content.js")
     s = open(p, encoding="utf-8").read()
-    open(p, "w", encoding="utf-8").write(KONTUR_UA_LOADER + s)
+    open(p, "w", encoding="utf-8").write(konturUaLoader() + s)
     mp = os.path.join(out, "manifest.json")
     m = json.load(open(mp, encoding="utf-8"))
     war = m.setdefault("web_accessible_resources", [])

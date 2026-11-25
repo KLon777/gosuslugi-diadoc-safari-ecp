@@ -1,11 +1,20 @@
 // ===== Safari (NMA): на сайтах Контура страница видит Chrome (kontur_ua.js, kontur_ua_rules.json) =====
+// Скрипт вставляется текстом, чтобы выполниться синхронно до скриптов страницы; если CSP страницы
+// запрещает inline-скрипты — подключается файлом.
 (function () {
     try {
         if (!/(^|\.)(kontur\.ru|skbkontur\.ru|kontur\.tech|diadoc\.ru|kontur-ca\.ru)$/.test(location.hostname)) return;
+        var root = document.documentElement || document.head;
         var el = document.createElement("script");
-        el.src = chrome.runtime.getURL("kontur_ua.js");
-        el.onload = el.onerror = function () { el.remove(); };
-        (document.head || document.documentElement).appendChild(el);
+        el.textContent = "// Выполняется в контексте страницы на сайтах Контура (подключается из content.js расширения).\n// Сайты Контура (в т.ч. выпуск сертификатов lk.ca.kontur.ru) пускают только «поддерживаемые» браузеры\n// и отсеивают Safari по User-Agent. Здесь страница видит Chrome; HTTP-заголовок подменяет\n// правило declarativeNetRequest (kontur_ua_rules.json).\n(function () {\n\tif (window.__nmaKonturUA) return;\n\twindow.__nmaKonturUA = true;\n\ttry { document.documentElement.setAttribute(\"data-nma-ua\", \"1\"); } catch (e) {}\n\tvar V = \"131.0.0.0\";\n\tvar UA = \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/\" + V + \" Safari/537.36\";\n\tvar APPV = UA.replace(/^Mozilla\\//, \"\");\n\tfunction def(obj, name, value) {\n\t\ttry { Object.defineProperty(obj, name, { get: function () { return value; }, configurable: true, enumerable: true }); } catch (e) {}\n\t}\n\tvar proto = Object.getPrototypeOf(navigator);\n\tdef(proto, \"userAgent\", UA);\n\tdef(proto, \"appVersion\", APPV);\n\tdef(proto, \"vendor\", \"Google Inc.\");\n\tvar brands = [{ brand: \"Google Chrome\", version: \"131\" }, { brand: \"Chromium\", version: \"131\" }, { brand: \"Not_A Brand\", version: \"24\" }];\n\tdef(proto, \"userAgentData\", {\n\t\tbrands: brands, mobile: false, platform: \"macOS\",\n\t\ttoJSON: function () { return { brands: brands, mobile: false, platform: \"macOS\" }; },\n\t\tgetHighEntropyValues: function (h) {\n\t\t\treturn Promise.resolve({ brands: brands, mobile: false, platform: \"macOS\", platformVersion: \"10.15.7\",\n\t\t\t\tarchitecture: \"x86\", bitness: \"64\", model: \"\", uaFullVersion: V,\n\t\t\t\tfullVersionList: brands.map(function (b) { return { brand: b.brand, version: V }; }) });\n\t\t}\n\t});\n\ttry { if (!window.chrome) window.chrome = { runtime: {} }; } catch (e) {}\n})();\n";
+        root.appendChild(el);
+        el.remove();
+        if (root.getAttribute("data-nma-ua") !== "1") {
+            var f = document.createElement("script");
+            f.src = chrome.runtime.getURL("kontur_ua.js");
+            f.onload = f.onerror = function () { f.remove(); };
+            root.appendChild(f);
+        }
     } catch (e) {}
 })();
 

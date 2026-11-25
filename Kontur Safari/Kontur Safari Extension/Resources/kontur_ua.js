@@ -5,6 +5,7 @@
 (function () {
 	if (window.__nmaKonturUA) return;
 	window.__nmaKonturUA = true;
+	try { document.documentElement.setAttribute("data-nma-ua", "1"); } catch (e) {}
 	var V = "131.0.0.0";
 	var UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + V + " Safari/537.36";
 	var APPV = UA.replace(/^Mozilla\//, "");
