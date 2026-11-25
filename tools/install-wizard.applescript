@@ -234,6 +234,17 @@ on wizard()
 		end if
 	end if
 
+	-- Госплагин собран только под Intel: без Rosetta 2 его хост-процесс не запускается, а вход на Госуслугах молча зависает
+	if not testMode and (picked contains 1) then
+		if sh("uname -m") is "arm64" and sh("test -f /Library/Apple/usr/libexec/oah/libRosettaRuntime && echo y || echo n") is "n" then
+			if askUser("Госплагин написан для процессоров Intel и на этом Mac требует Rosetta 2. Установить её сейчас? (нужен пароль администратора)", {"Пропустить", "Установить Rosetta"}, "Установить Rosetta") is "Установить Rosetta" then
+				try
+					shAdmin("softwareupdate --install-rosetta --agree-to-license")
+				end try
+			end if
+		end if
+	end if
+
 	-- Шаг 5. Копирование и подпись
 	set total to count of picked
 	set progress total steps to total
