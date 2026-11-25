@@ -316,7 +316,7 @@ Safari не даёт расширениям ни Chrome-овский native mess
   не может отправить такой запрос: нестандартный заголовок требует CORS-preflight, который мост
   отклоняет, а браузер всегда добавляет `Origin`.
 - Каждое приложение запускает только свой плагин (белый список хостов), найденный по его
-  официальному манифесту в `/Library/Google/Chrome/NativeMessagingHosts`.
+  официальному манифесту в `/Library/Google/Chrome/NativeMessagingHosts` или `/Library/Application Support/Google/Chrome/NativeMessagingHosts`.
 - Содержимое запросов и подписей в логи не пишется.
 
 ## Если не работает

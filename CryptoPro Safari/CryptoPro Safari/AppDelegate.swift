@@ -20,6 +20,7 @@ enum NMAConfig {
     static let mainHost = "ru.cryptopro.nmcades"
     static let nmhDirs = [
         "/Library/Google/Chrome/NativeMessagingHosts",
+        "/Library/Application Support/Google/Chrome/NativeMessagingHosts",
         NSHomeDirectory() + "/Library/Application Support/Google/Chrome/NativeMessagingHosts",
     ]
     static var bundleID: String { Bundle.main.bundleIdentifier ?? "local.safaricrypto" }

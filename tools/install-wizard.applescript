@@ -99,7 +99,8 @@ end indexOf
 on hostInstalled(f)
 	set p1 to "/Library/Google/Chrome/NativeMessagingHosts/" & f
 	set p2 to (POSIX path of (path to home folder)) & "Library/Application Support/Google/Chrome/NativeMessagingHosts/" & f
-	return (sh("test -f " & quoted form of p1 & " -o -f " & quoted form of p2 & " && echo y || echo n") is "y")
+	set p3 to "/Library/Application Support/Google/Chrome/NativeMessagingHosts/" & f
+	return (sh("test -f " & quoted form of p1 & " -o -f " & quoted form of p2 & " -o -f " & quoted form of p3 & " && echo y || echo n") is "y")
 end hostInstalled
 
 -- куда ставить: если приложение уже установлено (например, в ~/Applications), заменяем ту копию, чтобы не было дублей
