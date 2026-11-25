@@ -1,11 +1,22 @@
 // ===== Safari (NMA): адрес nmcades_plugin_api.js для cadesplugin_api.js, см. cades_safari_hook.js =====
+// Хук вставляется текстом и выполняется синхронно до скриптов страницы: на сайтах, где User-Agent
+// подменён на Chrome (Контур), страница подключает chrome-extension://…/nmcades_plugin_api.js сразу
+// при загрузке и не ждёт расширение. Если CSP запрещает inline-скрипты — подключается файлом.
 var __nmaHookReady = new Promise(function (res) {
     try {
+        var root = document.documentElement || document.head;
+        var real = chrome.runtime.getURL("nmcades_plugin_api.js");
         var el = document.createElement("script");
-        el.src = chrome.runtime.getURL("cades_safari_hook.js");
-        el.dataset.url = chrome.runtime.getURL("nmcades_plugin_api.js");
-        el.onload = el.onerror = function () { el.remove(); res(); };
-        (document.head || document.documentElement).appendChild(el);
+        el.dataset.url = real;
+        el.textContent = "// Выполняется в контексте страницы (подключается из content.js расширения КриптоПро).\n// cadesplugin_api.js на сайтах для Safari принимает только адрес вида\n// safari-extension://…/nmcades_plugin_api.js (старый формат Safari App Extension), а у Safari\n// Web Extension адрес safari-web-extension://… Поэтому расширение отдаёт странице условный\n// адрес, а здесь он подменяется на настоящий в момент подключения скрипта.\n(function () {\n\tvar s = document.currentScript, real = s && s.dataset && s.dataset.url;\n\tif (!real || window.__nmaCadesHook) return;\n\twindow.__nmaCadesHook = true;\n\ttry { document.documentElement.setAttribute(\"data-nma-cades\", \"1\"); } catch (e) {}\n\t// Safari-ветка cadesplugin_api.js просит safari-extension://nma-cryptopro/…, Chrome-ветка (на сайтах Контура\n\t// User-Agent подменён на Chrome) — chrome-extension://<id>/nmcades_plugin_api.js: подменяем оба адреса.\n\tvar FAKE = /^(?:safari-extension:\\/\\/nma-cryptopro|chrome-extension:\\/\\/[a-z]{32})\\/nmcades_plugin_api\\.js(?:\\?.*)?$/;\n\tfunction fix(v) { return FAKE.test(String(v)) ? real : v; }\n\tvar sa = Element.prototype.setAttribute;\n\tElement.prototype.setAttribute = function (n, v) {\n\t\tif (this instanceof HTMLScriptElement && String(n).toLowerCase() === \"src\") v = fix(v);\n\t\treturn sa.call(this, n, v);\n\t};\n\tvar d = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, \"src\");\n\tif (d && d.set) {\n\t\tObject.defineProperty(HTMLScriptElement.prototype, \"src\", {\n\t\t\tconfigurable: true, enumerable: d.enumerable, get: d.get,\n\t\t\tset: function (v) { d.set.call(this, fix(v)); }\n\t\t});\n\t}\n})();\n";
+        root.appendChild(el);
+        el.remove();
+        if (root.getAttribute("data-nma-cades") === "1") { res(); return; }
+        var f = document.createElement("script");
+        f.src = chrome.runtime.getURL("cades_safari_hook.js");
+        f.dataset.url = real;
+        f.onload = f.onerror = function () { f.remove(); res(); };
+        root.appendChild(f);
     } catch (e) { res(); }
 });
 ; (function () {

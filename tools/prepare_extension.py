@@ -136,17 +136,31 @@ def patch_kontur_ua(out):
     json.dump(m, open(mp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
-CADES_HOOK_LOADER = """// ===== Safari (NMA): адрес nmcades_plugin_api.js для cadesplugin_api.js, см. cades_safari_hook.js =====
+def cadesHookLoader():
+    import json as _j
+    hook = open(os.path.join(ROOT, "extension", "cades_safari_hook.js"), encoding="utf-8").read()
+    return """// ===== Safari (NMA): адрес nmcades_plugin_api.js для cadesplugin_api.js, см. cades_safari_hook.js =====
+// Хук вставляется текстом и выполняется синхронно до скриптов страницы: на сайтах, где User-Agent
+// подменён на Chrome (Контур), страница подключает chrome-extension://…/nmcades_plugin_api.js сразу
+// при загрузке и не ждёт расширение. Если CSP запрещает inline-скрипты — подключается файлом.
 var __nmaHookReady = new Promise(function (res) {
     try {
+        var root = document.documentElement || document.head;
+        var real = chrome.runtime.getURL("nmcades_plugin_api.js");
         var el = document.createElement("script");
-        el.src = chrome.runtime.getURL("cades_safari_hook.js");
-        el.dataset.url = chrome.runtime.getURL("nmcades_plugin_api.js");
-        el.onload = el.onerror = function () { el.remove(); res(); };
-        (document.head || document.documentElement).appendChild(el);
+        el.dataset.url = real;
+        el.textContent = %s;
+        root.appendChild(el);
+        el.remove();
+        if (root.getAttribute("data-nma-cades") === "1") { res(); return; }
+        var f = document.createElement("script");
+        f.src = chrome.runtime.getURL("cades_safari_hook.js");
+        f.dataset.url = real;
+        f.onload = f.onerror = function () { f.remove(); res(); };
+        root.appendChild(f);
     } catch (e) { res(); }
 });
-"""
+""" % _j.dumps(hook, ensure_ascii=False)
 
 
 def patch_cryptopro(out, shim):
@@ -165,7 +179,7 @@ def patch_cryptopro(out, shim):
                      'answer += "safari-extension://nma-cryptopro/nmcades_plugin_api.js";', 1, "cryptopro url")
     s = must_replace(s, 'window.postMessage(answer, "*");',
                      '__nmaHookReady.then(function () { window.postMessage(answer, "*"); });', 1, "cryptopro answer")
-    open(p, "w", encoding="utf-8").write(CADES_HOOK_LOADER + s)
+    open(p, "w", encoding="utf-8").write(cadesHookLoader() + s)
     shutil.copy(os.path.join(ROOT, "extension", "cades_safari_hook.js"), os.path.join(out, "cades_safari_hook.js"))
     m = json.load(open(os.path.join(out, "manifest.json"), encoding="utf-8"))
     for w in m.get("web_accessible_resources", []):
