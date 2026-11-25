@@ -33,7 +33,7 @@ function __reqKey(m) {
 function __nativeConnect(name) {
 	var msgL = [], discL = [], closed = false, sid = null, opening = null, chain = Promise.resolve(), port;
 	var outstanding = {}, polling = false;
-	var SEND_WAIT = 8, POLL_WAIT = 0.5, MAX_WAIT = 180000;
+	var SEND_WAIT = 8, POLL_WAIT = 0.5, MAX_WAIT = 1800000; // 30 мин: установка КриптоПро CSP с ДСЧ, ввод PIN
 
 	function nOutstanding() { return Object.keys(outstanding).length; }
 	function deliver(list) {
