@@ -7,7 +7,9 @@
 	var s = document.currentScript, real = s && s.dataset && s.dataset.url;
 	if (!real || window.__nmaCadesHook) return;
 	window.__nmaCadesHook = true;
-	var FAKE = /^safari-extension:\/\/nma-cryptopro\/nmcades_plugin_api\.js$/;
+	// Safari-ветка cadesplugin_api.js просит safari-extension://nma-cryptopro/…, Chrome-ветка (на сайтах Контура
+	// User-Agent подменён на Chrome) — chrome-extension://<id>/nmcades_plugin_api.js: подменяем оба адреса.
+	var FAKE = /^(?:safari-extension:\/\/nma-cryptopro|chrome-extension:\/\/[a-z]{32})\/nmcades_plugin_api\.js(?:\?.*)?$/;
 	function fix(v) { return FAKE.test(String(v)) ? real : v; }
 	var sa = Element.prototype.setAttribute;
 	Element.prototype.setAttribute = function (n, v) {
